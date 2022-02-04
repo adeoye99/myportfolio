@@ -1,8 +1,8 @@
 import React from 'react';
-import {Nav ,Bars ,NavMenu,NavLink } from "./Navcomp"
+import { Nav,NavLink,Bars,NavMenu } from "./Navcomp"; 
 
-function index() {
-  return <div>
+function Navbar(){
+  return( <div>
             <Nav>
                 <Bars/>
                   <NavMenu>
@@ -16,16 +16,9 @@ function index() {
                         Projects
                     </NavLink>
                 </NavMenu>
-                <NavLink>
-                        
-               </NavLink>
             </Nav>
-
-      
-
-
-
-  </div>;
+  </div>
+  );
 }
 
-export default index;
+export default Navbar;
