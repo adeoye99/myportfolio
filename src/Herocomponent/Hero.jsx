@@ -77,7 +77,7 @@ justify-content: center;
 text-align: left;
 h1{
     text-align:left;
-    color: black;
+    color: white;
 
 }
 
@@ -125,14 +125,13 @@ function Hero() {
     return (
         <HeroSection>
             <Herowrapper>
-                    <HeroImage src = "" alt = "my image"/>
+                <HeroImage src = "/Images/background.jpeg" alt = "my image"/>
                  <HeroContent>
                      <HeroTitle>
                          <h1>Hi</h1>
                          <h1>My name is Adeoye Sulaimon </h1>
                          <h1>I am a front-end developer</h1>
                      </HeroTitle>
-                    
                 </HeroContent>  
                 </Herowrapper>    
          </HeroSection>
