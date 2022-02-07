@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -122,15 +122,20 @@ const HeroTitle = styled.div`
 `
 
 function Hero() {
+    const [state] = useEffect({
+        title: "Hi",
+        titleTwo: "I'm",
+        titleThree: "Sulaimon" 
+    })
     return (
         <HeroSection>
             <Herowrapper>
                 <HeroImage src = "/Images/background.jpeg" alt = "my image"/>
                  <HeroContent>
                      <HeroTitle>
-                         <h1>Hi</h1>
-                         <h1>My name is Adeoye Sulaimon </h1>
-                         <h1>I am a front-end developer</h1>
+                         <h1>{state.title}</h1>
+                         <h1>{state.titleTwo}</h1>
+                         <h1>{state.titleThree}</h1>
                      </HeroTitle>
                 </HeroContent>  
                 </Herowrapper>    
