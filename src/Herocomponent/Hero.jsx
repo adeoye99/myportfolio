@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect"
 
 const HeroSection = styled.section  `
 height: 100vh;
+background-color:grey;
 max-height: 1100px;
 position:relative;
 overflow:hidden;
@@ -69,9 +70,9 @@ max-width:1600px;
 width:calc(100% - 100px);
 color:white;
 justify-content: center;
-text-align: left;
+text-align: center;
 h1{
-    text-align:left;
+    text-align:center;
     color: white;
 
 }
@@ -113,17 +114,20 @@ const HeroTitle = styled.div`
     text align: center;
     justify-content: center;
 }`
+const Button = styled.button`
+
+`
 
 
 function Hero() {
         return (
         <HeroSection>
              <Herowrapper>
-                <HeroImage src = "/Images/background.jpeg" alt = "my image"/>
                  <HeroContent>
                      <HeroTitle>
-                         <h1>Hi</h1>
+                         <h1>FRONT-END DEVELOPER </h1>
                     </HeroTitle>
+                    <Typewritereffect>
                          <Typewriter
                           options= {{
                               autoStart:true,
@@ -136,6 +140,9 @@ function Hero() {
                               ],
                           }}
                          />
+                    </Typewritereffect>
+                    <Button>CONTACT ME</Button>
+                    
                 </HeroContent>  
                </Herowrapper>
          </HeroSection>

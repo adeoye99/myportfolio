@@ -2,14 +2,31 @@ import React from 'react';
 import styled from "styled-components"
 
 const Aboutcontainer = styled.div`
-text-align: center
+color: white;
+text-align:left;
+background-color:black;
+padding-top:100px;
+
+
+
 `
+const Abouttitle = styled.h1`
+   text-align: center;
+
+`
+const Aboutcontent = styled.p`
+   text-align: center;
+   margin-top: 50px;
+   font-size: 1.5rem;
+
+`
+
 
 function About() {
   return <Aboutcontainer className="about">
-    <h1>About Me</h1>
-    <h1>Hi my name is Adeoye sulaiimon I am a frontend developer</h1>
-  </Aboutcontainer>;
+    <Abouttitle>About Me</Abouttitle>
+    <Aboutcontent>  A frontend developer</Aboutcontent>
+  </Aboutcontainer>
 }
 
 export default About;

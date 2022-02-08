@@ -3,8 +3,8 @@ import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-background-color: black;
-color : white;
+background-color: white;
+color: black;
 height: 85px;
 display: flex;
 width:100%;
@@ -37,8 +37,10 @@ export const Bars = styled(FaBars)`
 display:none;
 color: #808080;
 @media  only screen and (max-width: 768px) {
-	display: block;
-	margin-right:0;
+	display:block;
+	position:absolute;
+	right: 0;
+	color:black;
 	transform: translate(-100%, 75%);
 	font-size: 1.8rem;
 	cursor: pointer;
