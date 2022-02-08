@@ -101,7 +101,7 @@ h1{
 
 }
 `
-const Typewritereffect = styled.div`
+const Typewritereffect = styled.h1`
 
 `
 const HeroTitle = styled.div`
@@ -116,37 +116,28 @@ const HeroTitle = styled.div`
 
 
 function Hero() {
-    const [state] = useEffect({
-        title:"hi",
-        titleTwo: "I'm",
-        titleThree:"Adeoye",
-        titleFour:"Sulaimon"
-    })
         return (
         <HeroSection>
-            <Herowrapper>
+             <Herowrapper>
                 <HeroImage src = "/Images/background.jpeg" alt = "my image"/>
                  <HeroContent>
                      <HeroTitle>
-                         <div>{state.title}</div>
-                         <div>{state.titleTwo}</div>
-                         <div>{state.titleThree}</div>
-                         <div>{state.titleFour}</div>
+                         <h1>Hi</h1>
+                    </HeroTitle>
                          <Typewriter
-                          options ={{
-                              autostart:true,
-                              loop:true,
+                          options= {{
+                              autoStart:true,
+                              loop: true,
                               delay:40,
-                              string:[
-                                  "I'm a Youtube Channel",
+                              strings:[
+                                  "My Name is adeoye Sulaimon",
                                   "I'm a Web Developer",
                                   "I'm a Tech Enthusiast"
                               ],
                           }}
                          />
-                     </HeroTitle>
                 </HeroContent>  
-                </Herowrapper>    
+               </Herowrapper>
          </HeroSection>
     )
 }
