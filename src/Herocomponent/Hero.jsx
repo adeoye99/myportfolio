@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect"
 const HeroSection = styled.section  `
 height: 100vh;
 background-color:grey;
-max-height: 1100px;
+max-height: 1300px;
 position:relative;
 overflow:hidden;
 display:flex;
@@ -111,10 +111,21 @@ const HeroTitle = styled.div`
      text-align:center;
      justify-content: center;
 @media only screen and (max-width:768px){
-    text align: center;
+    text-align: center;
     justify-content: center;
 }`
 const Button = styled.button`
+padding:20px;
+margin-top: 50px;
+width:100px;
+border-radius:5px;
+border: none;
+@media only screen and (max-width:768px){
+    text-align:center;
+    justify-center:center;
+    margin-bottom:100px;
+    margin-top:00px;
+}
 
 `
 
@@ -125,16 +136,14 @@ function Hero() {
              <Herowrapper>
                  <HeroContent>
                      <HeroTitle>
-                         <h1>FRONT-END DEVELOPER </h1>
+                         <h1>FRONT-END DEVELOPER</h1>
                     </HeroTitle>
                     <Typewritereffect>
                          <Typewriter
                           options= {{
-                              autoStart:true,
-                              loop: true,
-                              delay:40,
+    
                               strings:[
-                                  "My Name is adeoye Sulaimon",
+                                  "My Name is Adeoye Sulaimon",
                                   "I'm a Web Developer",
                                   "I'm a Tech Enthusiast"
                               ],
