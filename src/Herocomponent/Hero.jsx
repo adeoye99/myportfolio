@@ -1,9 +1,9 @@
 import React,{ useEffect } from 'react'
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Typewriter from "typewriter-effect"
 
-
-const HeroSection = styled.section`
+const HeroSection = styled.section  `
 height: 100vh;
 max-height: 1100px;
 position:relative;
@@ -23,12 +23,7 @@ align-items:center;
 overflow:hidden;
 position:relative;
 `
-const HeroSlide = styled.div`
-z-index:1;
-width:100%;
-height:100%;
 
-`
 const HeroSlider= styled.div`
 position: absolute;
 top:0;
@@ -105,8 +100,8 @@ h1{
     }
 
 }
-
-
+`
+const Typewritereffect = styled.div`
 
 `
 const HeroTitle = styled.div`
@@ -117,25 +112,38 @@ const HeroTitle = styled.div`
 @media only screen and (max-width:768px){
     text align: center;
     justify-content: center;
-}
+}`
 
-`
 
 function Hero() {
     const [state] = useEffect({
-        title: "Hi",
+        title:"hi",
         titleTwo: "I'm",
-        titleThree: "Sulaimon" 
+        titleThree:"Adeoye",
+        titleFour:"Sulaimon"
     })
-    return (
+        return (
         <HeroSection>
             <Herowrapper>
                 <HeroImage src = "/Images/background.jpeg" alt = "my image"/>
                  <HeroContent>
                      <HeroTitle>
-                         <h1>{state.title}</h1>
-                         <h1>{state.titleTwo}</h1>
-                         <h1>{state.titleThree}</h1>
+                         <div>{state.title}</div>
+                         <div>{state.titleTwo}</div>
+                         <div>{state.titleThree}</div>
+                         <div>{state.titleFour}</div>
+                         <Typewriter
+                          options ={{
+                              autostart:true,
+                              loop:true,
+                              delay:40,
+                              string:[
+                                  "I'm a Youtube Channel",
+                                  "I'm a Web Developer",
+                                  "I'm a Tech Enthusiast"
+                              ],
+                          }}
+                         />
                      </HeroTitle>
                 </HeroContent>  
                 </Herowrapper>    
