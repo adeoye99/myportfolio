@@ -71,9 +71,9 @@ max-width:1600px;
 width:calc(100% - 100px);
 color:white;
 justify-content: center;
-text-align: center;
+text-align: left;
 h1{
-    text-align:center;
+    text-align:left;
     color: white;
 
 }
@@ -104,6 +104,7 @@ h1{
 }
 `
 const Typewritereffect = styled.h1`
+margin-top:50px;
 
 `
 const HeroTitle = styled.h1`
@@ -144,7 +145,8 @@ function Hero() {
                     <Typewritereffect>
                          <Typewriter
                           options= {{
-    
+                              autoStart:true,
+                              loop: true,    
                               strings:[
                                   "My Name is Adeoye Sulaimon",
                                   "I'm a Web Developer",

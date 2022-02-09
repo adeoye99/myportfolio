@@ -1,10 +1,11 @@
 import React from 'react';
-import { Nav,NavLink,Bars,NavMenu } from "./Navcomp"; 
+import { Nav,NavLink,Bars,NavMenu,Logo } from "./Navcomp"; 
 
 function Navbar(){
   return( <div>
             <Nav>
                 <Bars/>
+                <Logo>Adeoye Sulaimon Kolawole</Logo>
                   <NavMenu>
                      <NavLink to = "/Home">
                         HOME

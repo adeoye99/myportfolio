@@ -1,10 +1,12 @@
 import React from 'react';
 
 function Projects() {
-  return (<div>
+  return (
+        <div>
+           
 
-    
-  </div>);
+       </div>
+  );
 }
 
 export default Projects;

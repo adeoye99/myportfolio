@@ -14,9 +14,10 @@ z-index: 22;
 `; 
 
 export const NavLink = styled(Link)`
-color: #808080;
+color: black;
 display: flex;
-margin-left: 20px;
+font-size: 1.1rem;
+margin-left: 100px;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
@@ -50,7 +51,6 @@ color: #808080;
 export const NavMenu = styled.div`
 display: flex;
 align-items: center;
-margin-left: auto;
 margin-right:auto;
 white-space: nowrap; 
 @media screen and (max-width: 768px) {

@@ -5,6 +5,7 @@ import Projects from './Pages/Projects';
 import Navbar from "./Navbarcomponents/Index";
 import "./index.css";
 
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
                      <Route path = "/" element = {<Home/>}/>
                  </Routes>
              </div>
+             
         </Router>
 
     </div>
