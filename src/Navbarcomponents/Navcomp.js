@@ -23,7 +23,7 @@ padding: 0 1rem;
 height: 100%;
 cursor: pointer;
 &.active {
-	color: white;
+	color: black;
 }
 &:hover{
 	text-decoration: underline;
@@ -50,7 +50,8 @@ color: #808080;
 export const NavMenu = styled.div`
 display: flex;
 align-items: center;
-margin-left: 400px;
+margin-left: auto;
+margin-right:auto;
 white-space: nowrap; 
 @media screen and (max-width: 768px) {
 	display: none;

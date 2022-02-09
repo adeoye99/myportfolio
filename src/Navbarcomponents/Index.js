@@ -10,10 +10,10 @@ function Navbar(){
                         HOME
                     </NavLink>
                     <NavLink to = "/About">
-                        About
+                        ABOUT
                     </NavLink>
                     <NavLink to = "/Projects">
-                        Projects
+                        PROJECTS
                     </NavLink>
                 </NavMenu>
             </Nav>

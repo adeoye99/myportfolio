@@ -1,4 +1,4 @@
-import React,{ useEffect } from 'react'
+import React from 'react'
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect"
@@ -6,6 +6,7 @@ import Typewriter from "typewriter-effect"
 const HeroSection = styled.section  `
 height: 100vh;
 background-color:grey;
+background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
 max-height: 1300px;
 position:relative;
 overflow:hidden;
@@ -105,26 +106,30 @@ h1{
 const Typewritereffect = styled.h1`
 
 `
-const HeroTitle = styled.div`
-     margin-bottom: 50px;
-     font-size:clamp(1rem,8vw,2rem);
+const HeroTitle = styled.h1`
+     font-family: 'Montserrat',sans-serif;
+     font-size:clamp(1rem,8vw,3rem);
      text-align:center;
      justify-content: center;
 @media only screen and (max-width:768px){
+    margin-left:auto;
+    margin-right:auto;
     text-align: center;
     justify-content: center;
 }`
-const Button = styled.button`
+const Button = styled.button `
 padding:20px;
 margin-top: 50px;
-width:100px;
+width:150px;
 border-radius:5px;
 border: none;
-@media only screen and (max-width:768px){
+@media only screen and (max-width:428px){
     text-align:center;
     justify-center:center;
-    margin-bottom:100px;
-    margin-top:00px;
+    margin-left:auto;
+    
+
+    
 }
 
 `
@@ -135,9 +140,7 @@ function Hero() {
         <HeroSection>
              <Herowrapper>
                  <HeroContent>
-                     <HeroTitle>
-                         <h1>FRONT-END DEVELOPER</h1>
-                    </HeroTitle>
+                     <HeroTitle>FRONT-END DEVELOPER</HeroTitle>
                     <Typewritereffect>
                          <Typewriter
                           options= {{
@@ -151,7 +154,6 @@ function Hero() {
                          />
                     </Typewritereffect>
                     <Button>CONTACT ME</Button>
-                    
                 </HeroContent>  
                </Herowrapper>
          </HeroSection>

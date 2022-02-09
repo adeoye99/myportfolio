@@ -2,21 +2,18 @@ import React from 'react';
 import styled from "styled-components"
 
 const Aboutcontainer = styled.div`
-color: white;
+color: black;
 text-align:left;
-background-color:black;
-padding-top:100px;
-
-
-
+background-color:white;
 `
-const Abouttitle = styled.h1`
+const Abouttitle = styled.h3`
    text-align: center;
-
+   font-family: 'Open Sans', sans-serif;
+   margin-top:30px;
 `
 const Aboutcontent = styled.p`
    text-align: center;
-   margin-top: 50px;
+   margin-top: 40px;
    font-size: 1.5rem;
 
 `
