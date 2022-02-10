@@ -1,11 +1,34 @@
 import React from 'react';
+import styled from "styled-components";
+import Projectdatas from '../Data/Projectdata';
+import ProjectWorks from '../ProjectComponents/ProjectWorks';
+
+const ProjectContainer = styled.div`
+text-align:center;
+
+`
+const Projecttitle = styled.h2`
+    text-align:center;
+    margin-top:20px;
+    
+
+`
 
 function Projects() {
+  function CreateProject(Projectdata){
+    <ProjectWorks
+      img = {Projectdata.img}
+      about = {Projectdata.about}
+    
+    />
+  }
   return (
-        <div>
-           
-
-       </div>
+        <ProjectContainer>
+          <Projecttitle>MY PROJECTS</Projecttitle>
+          {Projectdatas.map(CreateProject)}
+         
+        </ProjectContainer>
+          
   );
 }
 
