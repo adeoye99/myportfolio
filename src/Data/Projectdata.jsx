@@ -1,20 +1,20 @@
 const Projectdatas  = [
     {
-        img:"",
+        img:"/Images/movieimage.jpeg",
         title: "",
         link: ""
         
 
     },
     {
-        img: "",
+        img: "/Images/shoppingimages.jpeg",
         title: "",
         link: ""
 
 
     },
     {
-        img : "",
+        img : "/Images/marsrover.jpeg",
         title : "",
         link :""
 

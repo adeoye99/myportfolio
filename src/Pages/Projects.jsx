@@ -14,13 +14,14 @@ const Projecttitle = styled.h2`
 
 `
 
-function Projects() {
+function Projects(Projectdata) {
   function CreateProject(Projectdata){
+    return(
     <ProjectWorks
       img = {Projectdata.img}
       about = {Projectdata.about}
-    
     />
+    )
   }
   return (
         <ProjectContainer>
