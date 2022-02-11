@@ -23,9 +23,11 @@ padding-top: 100px;
 padding-left: 50px;
 padding-right: 50px;
 @media only screen and (max-width:768px){
+  flex-direction:column;
   width:100%;
-  margin:0;
+  margin: 0;
   padding:0;
+
   
 }
 
@@ -33,14 +35,11 @@ padding-right: 50px;
 `
 
 const ProjectImage= styled.img`
-float:left;
-width:700px;
+
+max-width:700px;
 
 @media only screen and (max-width:768px){
-  width:50px;
-  height:100%;
   margin:0;
-  width:100vw;
 height:100vh;
 object-fit: cover;
 
@@ -55,6 +54,16 @@ background-color:
 &:hover{
   background-color: black;
 }
+@media only screen and (max-width:768px){
+  margin-top:0;
+}
+`
+const ProjectAbout = styled.p`
+  
+  @media only screen and (max-width:768px){
+    text-align:left;
+    width:100%;
+  }
 `
 function ProjectWorks(props){
   return (
@@ -62,7 +71,7 @@ function ProjectWorks(props){
        <ProjectWork>
               <ProjectImage src = {props.img}/>
               <ProjectContent>
-                 {props.about}
+                 <ProjectAbout>{props.about}</ProjectAbout>
                   <ProjectButton>{props.buttoncontent}</ProjectButton>
               </ProjectContent>
           </ProjectWork>

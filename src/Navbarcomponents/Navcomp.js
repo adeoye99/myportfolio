@@ -22,6 +22,7 @@ text-decoration: none;
 padding: 0 1rem;
 height: 100%;
 cursor: pointer;
+font-family: 'Open Sans', sans-serif;
 &.active {
 	color: black;
 }
@@ -89,8 +90,9 @@ margin-left: 24px;
 export const Logo = styled.h4`
      display:flex;
     margin-top: auto;
-    margin-bottom:auto; 
-    
+    margin-bottom:auto;
+	margin-left:50px;
+    font-family: 'Orbitron', sans-serif;
 @media only screen and (max-width:768px){
         margin-left: 0px;
         

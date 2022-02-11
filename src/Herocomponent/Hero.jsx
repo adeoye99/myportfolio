@@ -37,11 +37,6 @@ width:calc(100% - 100px);
 color:white;
 justify-content: center;
 text-align: left;
-h1{
-    text-align:left;
-    color: white;
-
-}
 
 @media screen and (max-width:425px){
     position:relative;
@@ -51,21 +46,9 @@ h1{
     text-align: center;
     display: flex;
     flex-direction:column;
-    h1{
-        margin-left:30px;
-        justify-content:center;
-        text-align:center;
-    }
-    
-    @media only screen and (width:320px){
-    
-        right:109px;
-        h1{
-            margin-left:100px;
-        }
-
-    }
-
+}
+@media only screen and (width:320px){
+    right:109px;
 }
 `
 const Typewritereffect = styled.h1`

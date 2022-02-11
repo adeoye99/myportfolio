@@ -5,7 +5,7 @@ function Navbar(){
   return( <div>
             <Nav>
                 <Bars/>
-                <Logo>Adeoye Sulaimon Kolawole</Logo>
+                <Logo>ADEOYE SULAIMON KOLAWOLE</Logo>
                   <NavMenu>
                      <NavLink to = "/Home">
                         HOME
