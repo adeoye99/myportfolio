@@ -1,22 +1,25 @@
 const Projectdatas  = [
     {
         img:"/Images/movieimage.jpeg",
-        title: "",
-        link: ""
+        about: "gfhdnfvxvbvbvhhdxbbcbccgcgcbcbchgchgcbc",
+        link: "",
+        buttoncontent: "Streaming Site"
         
 
     },
     {
         img: "/Images/shoppingimages.jpeg",
-        title: "",
-        link: ""
+        about: "gsgshdcnbcbvchvvbvbvnbvnvnvvcbcv",
+        link: "",
+        buttoncontent: "Shopping Images"
 
 
     },
     {
         img : "/Images/marsrover.jpeg",
-        title : "",
-        link :""
+        about: "hgsgsvxbcxvcvcvcxbxbxvcvcxvxbvxbvxvbcxx",
+        link :"",
+        buttoncontent:" Spacestargram"
 
     }
 ]

@@ -5,6 +5,7 @@ import ProjectWorks from '../ProjectComponents/ProjectWorks';
 
 const ProjectContainer = styled.div`
 text-align:center;
+margin-bottom:500px;
 
 `
 const Projecttitle = styled.h2`
@@ -20,6 +21,7 @@ function Projects(Projectdata) {
     <ProjectWorks
       img = {Projectdata.img}
       about = {Projectdata.about}
+      buttoncontent = {Projectdata.buttoncontent}
     />
     )
   }

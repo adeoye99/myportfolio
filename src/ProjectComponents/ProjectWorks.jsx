@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 const ProjectWork= styled.div`
 display:flex;
-
+flex-direction:row;
 text-align:center;
+margin-top:60px;
 
 
 
@@ -12,18 +13,21 @@ text-align:center;
 
 const ProjectContent= styled.p`
 display: flex;
+flex-direction:column;
+margin-left: 100px;
 
 `
 
 const ProjectImage= styled.img`
-float: left;
-display:flex;
+float:left;
+width:200px;
+
 
 
 
 `
 const ProjectButton = styled.button`
-width:50px;
+
 
 `
 function ProjectWorks(props){
@@ -33,7 +37,7 @@ function ProjectWorks(props){
               <ProjectImage src = {props.img}/>
               <ProjectContent>
                  {props.about}
-                  <ProjectButton  />
+                  <ProjectButton>{props.buttoncontent}</ProjectButton>
               </ProjectContent>
           </ProjectWork>
     

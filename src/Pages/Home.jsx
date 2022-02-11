@@ -9,6 +9,7 @@ function Home() {
       <Hero/>
       <About/>
       <Projects/>
+      
       <FooterContainer/>
       
   </div>;
