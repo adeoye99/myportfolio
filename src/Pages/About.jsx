@@ -7,23 +7,37 @@ flex-direction:row;
 color: black;
 text-align:left;
 background-color:white;
+@media only screen and (max-width: 768px){
+    flex-direction: column;
+}
+
 `
 const Abouttitle = styled.h2`
    text-align: center;
    font-family: 'Open Sans', sans-serif;
    margin-top:30px;
+
 `
 const AboutInfo = styled.div`
    display:flex;
    flex-direction:column;
    margin-right: 50px;
    text-align:center;
+   @media screen and (max-width: 768px){
+      width:100%;
+
+   }
 `
 const Aboutcontent = styled.p`
    text-align:center;
    margin-top: 20px;
    font-size: 1rem;
    font-family: 'Open Sans', sans-serif;
+   padding-left: 200px;
+   padding-right: 200px;
+   @media only screen and (max-width: 768px){
+
+   }
 
 `
 const SKilltitle = styled.h2`
@@ -43,8 +57,11 @@ margin-top:30px;
 const SkillInfo = styled.div`
  display: flex;
  flex-direction:column;
- margin-right:400px;
-
+ margin-right:200px;
+ @media only screen and (max-width: 768px){
+   width: 100%;
+}
+ 
 `
 
 

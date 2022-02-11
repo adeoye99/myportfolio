@@ -11,8 +11,8 @@ margin-bottom:500px;
 const Projecttitle = styled.h2`
     text-align:center;
     margin-top:20px;
+    font-family: 'Open Sans', sans-serif;
     
-
 `
 
 function Projects(Projectdata) {
@@ -29,7 +29,6 @@ function Projects(Projectdata) {
         <ProjectContainer>
           <Projecttitle>MY PROJECTS</Projecttitle>
           {Projectdatas.map(CreateProject)}
-         
         </ProjectContainer>
           
   );
