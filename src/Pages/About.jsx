@@ -28,7 +28,7 @@ const AboutInfo = styled.div`
 
    }
 `
-const Aboutcontent = styled.p`
+const Aboutcontent = styled.div`
    text-align:center;
    margin-top: 20px;
    font-size: 1rem;
@@ -36,7 +36,8 @@ const Aboutcontent = styled.p`
    padding-left: 200px;
    padding-right: 200px;
    @media only screen and (max-width: 768px){
-
+        width:100%;
+        padding:0;
    }
 
 `
