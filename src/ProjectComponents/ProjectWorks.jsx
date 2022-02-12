@@ -2,55 +2,33 @@ import React from 'react';
 import styled from "styled-components";
 
 const ProjectWork = styled.div`
-display:flex;
-flex-direction:row;
-text-align:center;
-margin-top:60px;
-margin-left:50px;
-@media only screen and (max-width : 768px){
-  flex-direction: column;
-  margin-left:0;
-
-}
+width:50%;
+background-color: white;
+margin-left: auto;
+margin-right:auto;
+margin-top: 30px;
+border-radius:  10px;
+box-shadow: 10px 10px 10px 10px #ccc ;
 
 `
 
-const ProjectContent= styled.p`
-display: flex;
-flex-direction:column;
-margin-left: 100px;
-padding-top: 100px;
-padding-left: 50px;
-padding-right: 50px;
-@media only screen and (max-width:768px){
-  flex-direction:column;
-  width:100%;
-  margin: 0;
-  padding:0;
+const ProjectContent= styled.div`
 
-  
-}
 
 
 `
 
 const ProjectImage= styled.img`
+width:100%;
+border-radius: 10px 10px 0  0;
 
-max-width:700px;
-
-@media only screen and (max-width:768px){
-  margin:0;
-height:100vh;
-object-fit: cover;
-
-}
 `
 const ProjectButton = styled.button`
-margin-top:200px;
+margin-top:20px;
 height: 50px;
 font-size: 1rem;
 color: white;
-background-color: 
+background-color: black;
 &:hover{
   background-color: black;
 }
@@ -58,11 +36,13 @@ background-color:
   margin-top:0;
 }
 `
-const ProjectAbout = styled.p`
-  
+const ProjectAbout = styled.div`
+ display: flex;
+ flex-direction:column:
   @media only screen and (max-width:768px){
-    text-align:left;
-    width:100%;
+    flex-direction:column;
+    
+  
   }
 `
 function ProjectWorks(props){

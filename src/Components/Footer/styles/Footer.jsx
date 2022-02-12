@@ -17,14 +17,18 @@ export const Column = styled.div`
 display:flex;
 flex-direction: column;
 text-align:center;
-margin-left: 60px;
 
 
 `
 export const Row = styled.div`
-display:grid ;
+display:flex;
 grid-template-columns: repeat(auto-fill,minmax( 230px , 1fr));
-grid-gap: 40px;
+grid-gap: 50px;
+margin-left:auto;
+margin-right: auto;
+@media only screen and (max-width:768px){
+    flex-direction:column;
+}
 
 `
 export const Link = styled.div`

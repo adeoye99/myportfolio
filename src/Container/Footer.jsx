@@ -8,24 +8,31 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.css";
 
-export function FooterContainer() { 
+export function FooterContainer() {
+  const currentyear = new Date().getFullYear();
   return( <Footer>
           <Footer.Wrapper>
             <Footer.Row>
               <a href="https://www.twitter.com" className="twitter social">
-                 <FontAwesomeIcon icon={faTwitter} size="3x" />
+                 <FontAwesomeIcon icon={faTwitter} size="2x" />
                  <p>Twitter</p>
              </a>
              <a href="https://www.github.com/jamesqquick" className="github social">
-                 <FontAwesomeIcon icon={faGithub} size="3x" />
+                 <FontAwesomeIcon icon={faGithub} size="2x" />
                  <p>Github</p>
              </a>
              <a href="https://www.github.com/jamesqquick" className="github social">
-                 <FontAwesomeIcon icon={faInstagram} size="3x" />
+                 <FontAwesomeIcon icon={faInstagram} size="2x" />
                  <p>Instagram</p>
              </a>
             </Footer.Row>
-          </Footer.Wrapper>
+            <hr/>
+            <Footer.Row>
+              <span>
+              Copyright © {currentyear}
+              </span>  
+            </Footer.Row>
+         </Footer.Wrapper>
   </Footer>
   )
 }

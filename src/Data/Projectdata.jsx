@@ -1,7 +1,7 @@
 const Projectdatas  = [
     {
         img:"/Images/movieimage.jpeg",
-        about: "gfhdnfvxvbvbvhhdxbbcbccgcgcbcbchgchgcbc",
+        about: "",
         link: "",
         buttoncontent: "Streaming Site"
         
