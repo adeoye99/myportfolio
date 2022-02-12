@@ -14,6 +14,8 @@ box-shadow: 10px 10px 10px 10px #ccc ;
 
 const ProjectContent= styled.div`
 
+word-wrap: break-word
+
 
 
 `
@@ -39,6 +41,9 @@ background-color: black;
 const ProjectAbout = styled.div`
  display: flex;
  flex-direction:column:
+ word-wrap: break-word;
+
+
   @media only screen and (max-width:768px){
     flex-direction:column;
     
