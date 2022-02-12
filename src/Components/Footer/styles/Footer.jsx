@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-padding: 80px 60px;
+padding: 0px 60px;
 background: black;
+@media only screen and (max-width:768px){
+    
+} 
+
 
 `
 export const Wrapper = styled.div`
@@ -22,12 +26,11 @@ text-align:center;
 `
 export const Row = styled.div`
 display:flex;
-grid-template-columns: repeat(auto-fill,minmax( 230px , 1fr));
-grid-gap: 50px;
 margin-left:auto;
 margin-right: auto;
 @media only screen and (max-width:768px){
-    flex-direction:column;
+    flex-direction:row;
+
 }
 
 `

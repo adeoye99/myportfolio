@@ -59,12 +59,16 @@ white-space: nowrap;
 
 
 export const Logo = styled.h4`
+    display:flex; 
     margin-top: auto;
     margin-bottom:auto;
 	margin-left:20px;
     font-family: 'Orbitron', sans-serif;
 @media only screen and (max-width:768px){
+	   display:flex;
+	   margin-left:10px;
       flex-direction:column;
+	  font-size:12px;
 
     }
 

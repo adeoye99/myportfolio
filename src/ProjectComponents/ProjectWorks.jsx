@@ -12,11 +12,9 @@ box-shadow: 10px 10px 10px 10px #ccc ;
 
 `
 
-const ProjectContent= styled.div`
+const ProjectContent= styled.div` 
 
-word-wrap: break-word
-
-
+word-wrap: break-word;
 
 `
 

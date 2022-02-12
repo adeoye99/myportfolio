@@ -27,12 +27,11 @@ export function FooterContainer() {
              </a>
             </Footer.Row>
             <hr/>
-            <Footer.Row>
-              <span>
-              Copyright © {currentyear}
-              </span>  
-            </Footer.Row>
+          
          </Footer.Wrapper>
+         <span class ="footer__year">
+              Copyright © {currentyear}
+          </span>
   </Footer>
   )
 }
