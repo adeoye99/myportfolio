@@ -5,7 +5,7 @@ import ProjectWorks from '../ProjectComponents/ProjectWorks';
 
 const ProjectContainer = styled.div`
 text-align:center;
-margin-bottom:500px;
+margin-bottom:00px;
 
 `
 const Projecttitle = styled.h2`

@@ -47,6 +47,10 @@ flex-direction:row;
 text-align:center;
 font-family: 'Open Sans', sans-serif;
 margin-top:30px;
+@media only screen and (max-width: 768px){
+   text-align: center;
+   justify-content:center;
+}
 
  
 `

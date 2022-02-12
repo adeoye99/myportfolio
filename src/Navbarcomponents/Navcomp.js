@@ -89,12 +89,14 @@ margin-left: 24px;
 `;
 export const Logo = styled.h4`
      display:flex;
+	 flex-direction: row;
     margin-top: auto;
     margin-bottom:auto;
 	margin-left:50px;
     font-family: 'Orbitron', sans-serif;
 @media only screen and (max-width:768px){
-        margin-left: 0px;
+      flex-direction: column;
+        margin-left: 10px;
         
     }
 
