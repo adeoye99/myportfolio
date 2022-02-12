@@ -24,7 +24,7 @@ margin-left: 60px;
 export const Row = styled.div`
 display:grid ;
 grid-template-columns: repeat(auto-fill,minmax( 230px , 1fr));
-grid-gap: 20px;
+grid-gap: 40px;
 
 `
 export const Link = styled.div`
