@@ -14,7 +14,7 @@ display: flex;
 flex-direction:column;
 justify-content: center;
 max-width:1000px;
-margin 0 auto;
+margin: 0 auto;
 
 `
 export const Column = styled.div`
@@ -28,7 +28,11 @@ export const Row = styled.div`
 display:flex;
 margin-left:auto;
 margin-right: auto;
+margin-top:50px;
+justify-content: space-between;
 @media only screen and (max-width:768px){
+    margin:0;
+    margin-top:50px;
     flex-direction:row;
 
 }
