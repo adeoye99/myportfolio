@@ -9,7 +9,7 @@ const Projectdatas  = [
     },
     {
         img: "/Images/shoppingimages.jpeg",
-        about: "gsgshdcnbcbvchvvbvbvnbvnvnvvcbcv",
+        about: "",
         link: "",
         buttoncontent: "Shopping Images"
 
@@ -17,7 +17,7 @@ const Projectdatas  = [
     },
     {
         img : "/Images/marsrover.jpeg",
-        about: "hgsgsvxbcxvcvcvcxbxbxvcvcxvxbvxbvxvbcxx",
+        about: " ",
         link :"",
         buttoncontent:" Spacestargram"
 

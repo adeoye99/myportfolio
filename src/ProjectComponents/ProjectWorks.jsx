@@ -26,11 +26,12 @@ border-radius: 10px 10px 0  0;
 const ProjectButton = styled.button`
 margin-top:20px;
 height: 50px;
+width:100%;
 font-size: 1rem;
 color: white;
 background-color: black;
 &:hover{
-  background-color: black;
+  background-color: grey;
 }
 @media only screen and (max-width:768px){
   margin-top:0;
@@ -40,8 +41,6 @@ const ProjectAbout = styled.div`
  display: flex;
  flex-direction:column:
  word-wrap: break-word;
-
-
   @media only screen and (max-width:768px){
     flex-direction:column;
     
