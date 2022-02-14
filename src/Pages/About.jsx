@@ -25,7 +25,7 @@ const AboutInfo = styled.div`
    text-align:center;
    @media screen and (max-width: 768px){
       width:100%;
-
+   
    }
 `
 const Aboutcontent = styled.div`
@@ -37,7 +37,9 @@ const Aboutcontent = styled.div`
    padding-right: 200px;
    @media only screen and (max-width: 768px){
         width:100%;
-        padding:0;
+        padding-left: 5px;
+      
+   
    }
 
 `
@@ -68,6 +70,15 @@ const SkillInfo = styled.div`
 }
  
 `
+const Aboutimage = styled.img`
+width:200px;
+height:200px;
+margin-left:auto;
+margin-top:20px;
+margin-right:auto;
+border-radius:50%;
+text-align:center;
+`
 
 
 
@@ -75,7 +86,8 @@ function About() {
   return <Aboutcontainer className="about">
     <AboutInfo>
        <Abouttitle>About Me</Abouttitle>
-       <Aboutcontent>Hi My Name is Adeoye Sulaimon Kolawole I am a frontend developer i have coding for up to 6-7 months i ave worked on worked on projects like streaming,an  ecommerce web app, Spacestargram(using the NASA api),weather read</Aboutcontent>
+       <Aboutimage src = "/Images/sulaimon.jpg"/>
+       <Aboutcontent>Hello! My Name is Adeoye Sulaimon Kolawole I am a frontend developer i enjoy creating user interfaces i ave worked on projects like streaming site,an  ecommerce web app, Spacestargram(using the NASA api),weather read i try to always learn new things everyday  </Aboutcontent>
     </AboutInfo>
     <SkillInfo>
       <SKilltitle>My Skills</SKilltitle>
