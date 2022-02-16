@@ -87,7 +87,7 @@ function About() {
     <AboutInfo>
        <Abouttitle>About Me</Abouttitle>
        <Aboutimage src = "/Images/sulaimon.jpg"/>
-       <Aboutcontent>Hello! My Name is Adeoye Sulaimon Kolawole I am a frontend developer i enjoy creating user interfaces i ave worked on projects like streaming site,an  ecommerce web app, Spacestargram(using the NASA api),weather read i try to always learn new things everyday  </Aboutcontent>
+       <Aboutcontent>Hello! My Name is Adeoye Sulaimon Kolawole I am a frontend developer i enjoy creatingjj user interfaces i ave worked on projects like streaming site,an  ecommerce web app, Spacestargram(using the NASA api),weather read i try to always learn new things everyday  </Aboutcontent>
     </AboutInfo>
     <SkillInfo>
       <SKilltitle>My Skills</SKilltitle>

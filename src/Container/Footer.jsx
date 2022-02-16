@@ -17,11 +17,11 @@ export function FooterContainer() {
                  <FontAwesomeIcon icon={faTwitter} size="2x" />
                  <p>Twitter</p>
              </a>
-             <a href="https://www.github.com/jamesqquick" className="github social">
+             <a href="https://www.instagram.com/adeoye99" className="github social">
                  <FontAwesomeIcon icon={faGithub} size="2x" />
                  <p>Github</p>
              </a>
-             <a href="https://www.github.com/jamesqquick" className="github social">
+             <a href="https://www.github.com/adeoye99" className="facebook social">
                  <FontAwesomeIcon icon={faInstagram} size="2x" />
                  <p>Instagram</p>
              </a>
