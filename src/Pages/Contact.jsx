@@ -6,7 +6,7 @@ function Contact() {
         <form>
           <input type="text" placeholder="Name" />
           <input type="text" paceholder = "Message" />
-
+          <button>Send</button>
         </form>
     </div>
   )

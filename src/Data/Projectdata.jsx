@@ -1,15 +1,15 @@
 const Projectdatas  = [
     {
         img:"/Images/movieimage.jpeg",
-        about: "",
-        link: "",
+        about: "A streaming app used for watching movie trailers or videos uploaded on you tube. Built using Reactjs and firebase.",
+        link: " ",
         buttoncontent: "Streaming Site"
         
 
     },
     {
         img: "/Images/shoppingimages.jpeg",
-        about: "",
+        about: "An ecommerce-app for online-shopping complete with user authentication. Built using Reactjs and firebase.",
         link: "",
         buttoncontent: "Shopping Images"
 
@@ -17,7 +17,7 @@ const Projectdatas  = [
     },
     {
         img : "/Images/marsrover.jpeg",
-        about: " ",
+        about: "A site for viewing the pictures taken by the nasa mars rover, this site updates any time NASA updates their mars rover pictures. Built using Reactjs and NasaAPI",
         link :"",
         buttoncontent:" Spacestargram"
 
