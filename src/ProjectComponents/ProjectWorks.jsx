@@ -21,9 +21,8 @@ word-wrap: break-word;
 const ProjectImage= styled.img`
 width:100%;
 border-radius: 10px 10px 0  0;
-
 `
-const ProjectButton = styled(Link)`
+const ProjectButton = styled.button`
 margin-top:20px;
 height: 50px;
 width:100%;
@@ -54,7 +53,10 @@ function ProjectWorks(props){
               <ProjectImage src = {props.img}/>
               <ProjectContent>
                  <ProjectAbout>{props.about}</ProjectAbout>
-                  <ProjectButton to = {`${props.link}`}>{props.buttoncontent}</ProjectButton>
+                 <Link to = {`${props.link}`}>
+                 <ProjectButton >{props.buttoncontent}</ProjectButton>
+                 </Link>
+                 
               </ProjectContent>
           </ProjectWork>
     

@@ -18,7 +18,7 @@ const Projectdatas  = [
     {
         img : "/Images/marsrover.jpeg",
         about: "A site for viewing the pictures taken by the nasa mars rover, this site updates any time NASA updates their mars rover pictures. Built using Reactjs and NasaAPI",
-        link :"https://spacestargram.web.app",
+        link : "https://spacestargram.web.app",
         buttoncontent:" Spacestargram"
 
     }
