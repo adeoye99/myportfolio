@@ -22,6 +22,7 @@ function Projects(Projectdata) {
       img = {Projectdata.img}
       about = {Projectdata.about}
       buttoncontent = {Projectdata.buttoncontent}
+      link = {Projectdata.link}
     />
     )
   }

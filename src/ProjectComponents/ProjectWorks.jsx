@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const ProjectWork = styled.div`
 width:50%;
@@ -8,7 +9,6 @@ margin-left: auto;
 margin-right:auto;
 margin-top: 30px;
 border-radius:  10px;
-box-shadow: 10px 10px 10px 10px #ccc ;
 
 `
 
@@ -23,7 +23,7 @@ width:100%;
 border-radius: 10px 10px 0  0;
 
 `
-const ProjectButton = styled.button`
+const ProjectButton = styled(Link)`
 margin-top:20px;
 height: 50px;
 width:100%;
@@ -54,7 +54,7 @@ function ProjectWorks(props){
               <ProjectImage src = {props.img}/>
               <ProjectContent>
                  <ProjectAbout>{props.about}</ProjectAbout>
-                  <ProjectButton>{props.buttoncontent}</ProjectButton>
+                  <ProjectButton to = {`${props.link}`}>{props.buttoncontent}</ProjectButton>
               </ProjectContent>
           </ProjectWork>
     
