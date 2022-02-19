@@ -46,16 +46,20 @@ const ProjectAbout = styled.div`
   
   }
 `
+const ProjectLink = styled.a`
+color: black;
+ 
+`
 function ProjectWorks(props){
   return (
        <ProjectWork>
-           <a href =  {`${props.link}`}>
+           <ProjectLink href =  {`${props.link}`}>
               <ProjectImage src = {props.img}/>
               <ProjectContent>
                  <ProjectAbout>{props.about}</ProjectAbout>
                  <ProjectButton >{props.buttoncontent}</ProjectButton>
               </ProjectContent>
-              </a>
+              </ProjectLink>
           </ProjectWork>
     
   );

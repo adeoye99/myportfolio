@@ -1,7 +1,7 @@
 const Projectdatas  = [
     {
         img:"/Images/movieimage.jpeg",
-        about: "A streaming app used for watching movie trailers or videos uploaded on you tube. Built using Reactjs and firebase.",
+        about: "A streaming app used for watching movie trailers or videos uploaded on youtube. Built using Reactjs and firebase.",
         link: " https://movie-streaming-app-f4013.web.app",
         buttoncontent: "Streaming Site"
     },
