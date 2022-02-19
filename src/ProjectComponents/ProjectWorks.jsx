@@ -48,16 +48,14 @@ const ProjectAbout = styled.div`
 `
 function ProjectWorks(props){
   return (
-    
        <ProjectWork>
+           <a href =  {`${props.link}`}>
               <ProjectImage src = {props.img}/>
               <ProjectContent>
                  <ProjectAbout>{props.about}</ProjectAbout>
-                 <Link to = {`${props.link}`}>
                  <ProjectButton >{props.buttoncontent}</ProjectButton>
-                 </Link>
-                 
               </ProjectContent>
+              </a>
           </ProjectWork>
     
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from "../Navbarcomponents/Index";
 import styled from "styled-components";
 import Projectdatas from '../Data/Projectdata';
 import ProjectWorks from '../ProjectComponents/ProjectWorks';
