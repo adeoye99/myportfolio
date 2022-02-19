@@ -5,7 +5,7 @@ function Contact() {
   function sendEmail(){
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+    emailjs.sendForm('gmail', 'Sulaimon Template', form.current, 'YOUR_USER_ID')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -14,7 +14,8 @@ function Contact() {
   }
   return (
     <div>
-        <form>
+        <form >
+          
           <input type="text" placeholder="Name" />
           <input type="text" paceholder = "Message" />
           <button>Send</button>
