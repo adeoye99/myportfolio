@@ -1,11 +1,39 @@
 import React from 'react'
+import styled from "styled-components"
 import emailjs from '@emailjs/browser';
 
-function Contact() {
-  function sendEmail(){
-    e.preventDefault();
+const Contacttitle = styled.h2`
+ width:500px;
+ margin-top:50px;
+`
+const Contactcontainer = styled.div`
+ display:flex;
+ flex-direction:column;
+ margin-left:auto;
+ margin-right:auto;
+`
+const Contactform = styled.form`
+ display:flex;
+ flex-direction:column;
+ margin-left:auto;
+ margin-right:auto;
+`
+const Contactinput = styled.input`
+ width:500px;
+ margin-top:50px;
+`
+const Contactbutton = styled.button`
+ width:500px;
+ margin-top:50px;
+`
 
-    emailjs.sendForm('gmail', 'template_rgjtao7', form.current, 'YOUR_USER_ID')
+function Contact() {
+  function sendEmail(e){
+    console.log(process.env.REACT_APP_CLIENT_ID);
+const API_KEY = process.env.REACT_APP_CLIENT_ID;
+    e.preventDefault();
+   
+    emailjs.sendForm('gmail', 'template_rgjtao7', e.target, API_KEY)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -13,13 +41,13 @@ function Contact() {
       });
   }
   return (
-    <div>
-        <form >
-          <input type="text" placeholder="Name" />
-          <input type="text" paceholder = "Message" />
-          <button>Send</button>
-        </form>
-    </div>
+    <Contactcontainer>
+        <Contactform onSubmit={sendEmail}>
+          <Contactinput type= "text" placeholder="Name" />
+          <Contactinput type= "text" placeholder = "Message" />
+          <Contactbutton>Send</Contactbutton>
+        </Contactform>
+    </Contactcontainer>
   )
 }
 
