@@ -5,6 +5,8 @@ import emailjs from '@emailjs/browser';
 const Contacttitle = styled.h2`
  width:500px;
  margin-top:50px;
+ text-align:center;
+ font-family: 'Open Sans', sans-serif;
  @media screen and (max-width:768px){
    width:100%;
  }
@@ -35,7 +37,9 @@ const Contactinput = styled.input`
  height:30px;
  margin-top:50px;
  @media screen and (max-width:768px){
-  width:100%;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
 }
 `
 const Contactinputmessage = styled.input`
@@ -43,7 +47,9 @@ const Contactinputmessage = styled.input`
  height:100px;
  margin-top:50px;
  @media screen and (max-width:768px){
-  width:100%;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
 }
 `
 const Contactbutton = styled.input`
@@ -52,7 +58,8 @@ const Contactbutton = styled.input`
  text-align:center;
  margin-top:50px;
  @media screen and (max-width:768px){
-  width:100%;
+   margin-left:5%;
+
 }
 
 `
