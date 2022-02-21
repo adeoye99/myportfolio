@@ -1,10 +1,10 @@
 import React from 'react';
 import { Nav,NavLink,Bars,NavMenu,Logo } from "./Navcomp"; 
 
-function Navbar(){
+function Navbar({toggle}){
   return( <div>
             <Nav>
-                <Bars/>
+                <Bars onClick ={toggle}/>
                 <Logo>ADEOYE SULAIMON KOLAWOLE</Logo>
                   <NavMenu>
                      <NavLink to = "/Home">

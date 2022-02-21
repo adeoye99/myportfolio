@@ -39,20 +39,23 @@ justify-content: center;
 text-align: left;
 
 @media screen and (max-width:425px){
-    position:relative;
     top:20px;
-    right:20%;
     justify-content: center;
     text-align: center;
     display: flex;
     flex-direction:column;
 }
 @media only screen and (width:320px){
-    right:109px;
+    right:50px;
 }
 `
 const Typewritereffect = styled.h1`
+
 margin-top:50px;
+@media screen and (width:768px){
+    width:100%;
+    margin-bottom:0px;
+}
 
 `
 const HeroTitle = styled.h1`
@@ -76,8 +79,8 @@ border: none;
     text-align:center;
     justify-center:center;
     margin-left:auto;
-    
-
+    margin-right:auto;
+    margin-top:100px;
     
 }
 

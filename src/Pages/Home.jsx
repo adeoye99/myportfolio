@@ -8,7 +8,6 @@ import Projects from './Projects';
 
 function Home() {
   return <div>
-     <Navbar/>
       <Hero/>
       <About/>
       <Projects/>
