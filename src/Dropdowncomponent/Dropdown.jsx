@@ -11,7 +11,7 @@ const DropdownContainer = styled.div`
   background:white ;
   display: grid;
   align-items:center;
-  top:0;
+  top:0px;
   left:0;
   transition: 0.3s ease-in-out;
   opacity: ${({isOpen}) => (isOpen ? '1': '0' )};
@@ -38,15 +38,15 @@ const DropdownWrapper= styled.div``
 const DropdownMenu = styled.div`
 display: grid;
 grid-template-column: 1fr;
-grid-template-rows: repeat(3, 53px);
+grid-template-rows: repeat(3, 63px);
 text-align: center;
-margin-bottom: 4rem;
 
 `
 const DropdownLink = styled(Link)`
  display:flex;
  align-item: left;
  justify-content: left;
+ 
  border-bottom:1px solid black ;
  border-left:white;
  border-right:white;
@@ -55,6 +55,9 @@ const DropdownLink = styled(Link)`
  text-decoration:none;
  color:black;
  cursor:pointer;
+ padding-top:30px;
+ padding-left:10px;
+ 
  transition: 0.2s ease-in-out;
  @media screen and (max-width:768px){
      font-size:1rem;
