@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
 import About from './Pages/About';
 import Home from './Pages/Home';
 import React,{ useState } from "react";
@@ -15,20 +15,11 @@ function App() {
   }
   return (
     <div className="App">
-        <Router >
         <Navbar toggle = {toggle}/>
         <Dropdown isOpen = {isOpen} toggle ={toggle}/>
-             <div>
-                 <Routes>
-                     <Route path = "/Home" element = {<Home/>}/>
-                     <Route path = "/About" element = {<About/>}/>
-                     <Route path = "/Projects" element = {<Projects/>}/>
-                     <Route path = "/" element = {<Home/>}/>
-                 </Routes>
-             </div>
-             
-        </Router>
-
+        <Home/>
+        <About/>
+        <Projects/>
     </div>
   );
 }

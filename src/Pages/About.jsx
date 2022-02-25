@@ -86,7 +86,7 @@ text-align:center;
 
 
 function About() {
-  return <Aboutcontainer className="about">
+  return <Aboutcontainer className="about" id ="about">
     <AboutInfo>
        <Abouttitle>About Me</Abouttitle>
        <Aboutimage src = "/Images/sulaimon.jpg"/>

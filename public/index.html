@@ -23,7 +23,9 @@
     <title>myportfolio</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
+      const API_ID = process.env.REACT_APP_CLIENT_ID;
         (function() {
+
             emailjs.init(`${API_ID}`);
         })();
     </script>

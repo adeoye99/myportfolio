@@ -64,7 +64,6 @@ const Contactbutton = styled.input`
 
 `
 const API_ID = process.env.REACT_APP_CLIENT_ID;
-console.log(process.env.REACT_APP_CLIENT_ID);
 function Contact() {
   function sendEmail(e){
     e.preventDefault();
@@ -78,7 +77,7 @@ function Contact() {
       e.target.reset();
   }
   return (
-    <Contactcontainer>
+    <Contactcontainer id = "contact">
         <Contactform onSubmit={sendEmail}>
           <Contacttitle>Contact Me</Contacttitle>
           <Contactinput type= "text" placeholder="Name" name = "name" />

@@ -16,19 +16,20 @@ const Projecttitle = styled.h2`
     
 `
 
-function Projects(Projectdata) {
+function Projects() {
   function CreateProject(Projectdata){
     return(
     <ProjectWorks
+      key = {Projectdata.id}
       img = {Projectdata.img}
       about = {Projectdata.about}
       buttoncontent = {Projectdata.buttoncontent}
       link = {Projectdata.link}
     />
-    )
+    );
   }
   return (
-        <ProjectContainer>
+        <ProjectContainer id ="projects">
           <Projecttitle>MY PROJECTS</Projecttitle>
           {Projectdatas.map(CreateProject)}
         </ProjectContainer>
