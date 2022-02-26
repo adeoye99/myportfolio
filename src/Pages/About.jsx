@@ -86,7 +86,7 @@ text-align:center;
 
 
 function About() {
-  return( <Aboutcontainer  id ="about">
+  return( <Aboutcontainer id ="about">
               <AboutInfo>
                    <Aboutimage src = "/Images/sulaimon.jpg"/>
                    <Aboutcontent>Hello! My Name is Adeoye Sulaimon Kolawole I am a frontend developer i enjoy creating user interfaces i ave worked on projects like streaming site,an  ecommerce web app, Spacestargram(using the NASA api),weather read i try to always learn new things everyday  </Aboutcontent>

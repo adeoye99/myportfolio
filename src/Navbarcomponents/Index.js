@@ -7,13 +7,13 @@ function Navbar({toggle}){
                 <Bars onClick ={toggle}/>
                 <Logo>ADEOYE SULAIMON KOLAWOLE</Logo>
                   <NavMenu>
-                     <NavLink href = "home">
+                     <NavLink href = "/">
                         HOME
                     </NavLink >
-                    <NavLink href = "about">
+                    <NavLink href = "#about">
                         ABOUT
                     </NavLink>
-                    <NavLink href = "projects">
+                    <NavLink href = "#projects">
                         PROJECTS
                     </NavLink>
                 </NavMenu>
