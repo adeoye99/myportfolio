@@ -1,5 +1,4 @@
 import { FaBars } from "react-icons/fa";
-import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Nav = styled.nav`
@@ -11,7 +10,7 @@ width:100%;
 z-index: 22;
 `; 
 
-export const NavLink = styled(Link)`
+export const NavLink = styled.a`
 color: black;
 display: flex;
 font-size: 1.1rem;

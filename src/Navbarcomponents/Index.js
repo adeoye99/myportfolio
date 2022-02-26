@@ -13,7 +13,7 @@ function Navbar({toggle}){
                     <NavLink href = "about">
                         ABOUT
                     </NavLink>
-                    <NavLink  href = "project">
+                    <NavLink href = "projects">
                         PROJECTS
                     </NavLink>
                 </NavMenu>

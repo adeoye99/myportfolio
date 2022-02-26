@@ -86,22 +86,22 @@ text-align:center;
 
 
 function About() {
-  return <Aboutcontainer className="about" id ="about">
-    <AboutInfo>
-       <Abouttitle>About Me</Abouttitle>
-       <Aboutimage src = "/Images/sulaimon.jpg"/>
-       <Aboutcontent>Hello! My Name is Adeoye Sulaimon Kolawole I am a frontend developer i enjoy creating user interfaces i ave worked on projects like streaming site,an  ecommerce web app, Spacestargram(using the NASA api),weather read i try to always learn new things everyday  </Aboutcontent>
-    </AboutInfo>
-    <SkillInfo>
-      <SKilltitle>My Skills</SKilltitle>
-      <Skillcontent>HTML</Skillcontent>
-      <Skillcontent>CSS</Skillcontent>
-      <Skillcontent>JAVASCRIPT</Skillcontent>
-      <Skillcontent>REACTJS</Skillcontent>
-      <Skillcontent>BOOTSTRAP</Skillcontent>
-    </SkillInfo>
+  return( <Aboutcontainer  id ="about">
+              <AboutInfo>
+                   <Aboutimage src = "/Images/sulaimon.jpg"/>
+                   <Aboutcontent>Hello! My Name is Adeoye Sulaimon Kolawole I am a frontend developer i enjoy creating user interfaces i ave worked on projects like streaming site,an  ecommerce web app, Spacestargram(using the NASA api),weather read i try to always learn new things everyday  </Aboutcontent>
+               </AboutInfo>
+             <SkillInfo>
+                    <SKilltitle>My Skills</SKilltitle>
+                    <Skillcontent>HTML</Skillcontent>
+                   <Skillcontent>CSS</Skillcontent>
+                   <Skillcontent>JAVASCRIPT</Skillcontent>
+                    <Skillcontent>REACTJS</Skillcontent>
+                   <Skillcontent>BOOTSTRAP</Skillcontent>
+              </SkillInfo>
     
     </Aboutcontainer>
+  )
 }
 
 export default About;

@@ -4,6 +4,9 @@ import Home from './Pages/Home';
 import React,{ useState } from "react";
 import Projects from './Pages/Projects';
 import Navbar from "./Navbarcomponents/Index";
+import {BrowserRouter as Router} from "react-router-dom"
+import Contact from './Pages/Contact';
+import FooterContainer from './Container/Footer';
 import "./index.css";
 import Dropdown from "./Dropdowncomponent/Dropdown";
 
@@ -15,12 +18,18 @@ function App() {
   }
   return (
     <div className="App">
-        <Navbar toggle = {toggle}/>
-        <Dropdown isOpen = {isOpen} toggle ={toggle}/>
-        <Home/>
-        <About/>
-        <Projects/>
-    </div>
+      <Router>
+          <Navbar toggle = {toggle}/>
+           <Dropdown isOpen = {isOpen} toggle ={toggle}/>
+            <Home />
+            <About />
+            <Projects id = "projects"/>
+            <Contact/>
+            <FooterContainer />
+          
+            </Router>
+      </div>
+  
   );
 }
 

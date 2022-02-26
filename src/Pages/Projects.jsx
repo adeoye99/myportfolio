@@ -16,7 +16,7 @@ const Projecttitle = styled.h2`
     
 `
 
-function Projects() {
+function Projects(props) {
   function CreateProject(Projectdata){
     return(
     <ProjectWorks
@@ -29,7 +29,7 @@ function Projects() {
     );
   }
   return (
-        <ProjectContainer id ="projects">
+        <ProjectContainer id ={props.id}>
           <Projecttitle>MY PROJECTS</Projecttitle>
           {Projectdatas.map(CreateProject)}
         </ProjectContainer>
