@@ -5,6 +5,7 @@ const SKilltitle = styled.h2`
 display:flex;
 flex-direction:row;
 text-align:center;
+justify-content:center;
 font-family: 'Open Sans', sans-serif;
 margin-top:30px;
 @media only screen and (max-width: 768px){
@@ -16,13 +17,18 @@ margin-top:30px;
 `
 const Skillcontent= styled.div`
 text-align:center;
+justify-content:center;
+
 font-family: 'Open Sans', sans-serif;
 margin-top:30px;
 `
 const SkillInfo = styled.div`
  display: flex;
  flex-direction:column;
- margin-right:200px;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+ justify-content:center;
+ text-align:center;
  @media only screen and (max-width: 768px){
    width: 100%;
 }
