@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import menuData from "../Data/menuData";
 import { FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll"
 const DropdownContainer = styled.div`
   position : fixed;
   z-index: 999;
@@ -41,7 +42,7 @@ grid-template-rows: repeat(3, 63px);
 text-align: center;
 
 `
-const DropdownLink = styled.a`
+const DropdownLink = styled(Link)`
  display:flex;
  align-item: left;
  justify-content: left;
@@ -77,13 +78,13 @@ function Dropdown({isOpen,toggle}){
               </Icon>
               <DropdownWrapper>
                   <DropdownMenu>
-                  <DropdownLink href = "#home">
+                  <DropdownLink to="/" spy={true} smooth={true} offset={-10} duration={500}>
                               HOME
                           </DropdownLink>
-                          <DropdownLink href = "#about">
+                          <DropdownLink to="about" spy={true} smooth={true} offset={-10} duration={500}>
                               ABOUT
                           </DropdownLink>
-                          <DropdownLink href = "#projects">
+                          <DropdownLink to="projects" spy={true} smooth={true} offset={-10} duration={500}>
                              PROJECTS
                           </DropdownLink>
                   </DropdownMenu>

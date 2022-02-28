@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect"
 
 const HeroSection = styled.section  `
@@ -69,7 +69,7 @@ const HeroTitle = styled.h1`
     text-align: center;
     justify-content: center;
 }`
-const Buttoncontainer = styled.a`
+const Buttoncontainer = styled(Link)`
 margin-top:150px;
 margin-right:1050px;
 @media screen and (max-width:768px){
@@ -86,10 +86,7 @@ align-items:left;
 justify-content:left;
 border: none;
 @media only screen and (max-width:428px){
-
-    
     left:20px;
-    
     margin-top:100px;
     
 }
@@ -117,7 +114,7 @@ function Hero() {
                          />
                     </Typewritereffect>
                 </HeroContent>
-                <Buttoncontainer href = "#contact">
+                <Buttoncontainer to="contact" spy={true} smooth={true} offset={-10} duration={500}> 
                         <Button>CONTACT ME</Button>
                 </Buttoncontainer>
               

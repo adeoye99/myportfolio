@@ -1,16 +1,18 @@
 import { FaBars } from "react-icons/fa";
 import styled from "styled-components";
+import { Link } from "react-scroll"
 
 export const Nav = styled.nav`
+position:fixed;
 background-color: white;
 color: black;
 height: 85px;
 display: flex;
 width:100%;
-z-index: 22;
+z-index: 999;
 `; 
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
 color: black;
 display: flex;
 font-size: 1.1rem;
