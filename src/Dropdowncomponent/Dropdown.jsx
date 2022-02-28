@@ -77,13 +77,13 @@ function Dropdown({isOpen,toggle}){
               </Icon>
               <DropdownWrapper>
                   <DropdownMenu>
-                  <DropdownLink to = "#home">
+                  <DropdownLink href = "#home">
                               HOME
                           </DropdownLink>
-                          <DropdownLink to = "#about">
+                          <DropdownLink href = "#about">
                               ABOUT
                           </DropdownLink>
-                          <DropdownLink to = "#projects">
+                          <DropdownLink href = "#projects">
                              PROJECTS
                           </DropdownLink>
                   </DropdownMenu>

@@ -25,10 +25,11 @@ margin-top:30px;
 const SkillInfo = styled.div`
  display: flex;
  flex-direction:column;
-border-top: 2px solid black;
-border-bottom: 2px solid black;
+ color:white;
+ background-color:black;
  justify-content:center;
  text-align:center;
+ padding-bottom:50px;
  @media only screen and (max-width: 768px){
    width: 100%;
 }

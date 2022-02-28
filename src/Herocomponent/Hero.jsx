@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect"
 
 const HeroSection = styled.section  `
 height: 100vh;
-background-color:grey;
+background-color:black;
 background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
 max-height: 1300px;
 position:relative;

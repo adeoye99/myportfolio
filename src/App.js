@@ -6,10 +6,11 @@ import Projects from './Pages/Projects';
 import Navbar from "./Navbarcomponents/Index";
 import {BrowserRouter as Router} from "react-router-dom"
 import Contact from './Pages/Contact';
-import FooterContainer from './Container/Footer';
+import { FooterContainer }from './Container/Footer';
 import "./index.css";
 import Skill from "./Pages/Skill"
 import Dropdown from "./Dropdowncomponent/Dropdown";
+
 
 
 function App() {
@@ -27,9 +28,8 @@ function App() {
             <Skill/>
             <Projects id = "projects"/>
             <Contact/>
-            <FooterContainer />
-          
-            </Router>
+            <FooterContainer/>
+       </Router>
       </div>
   
   );
