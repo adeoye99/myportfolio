@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from "styled-components"
 
 const SKilltitle = styled.h2`
 display:flex;

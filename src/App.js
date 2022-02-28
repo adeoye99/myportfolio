@@ -8,6 +8,7 @@ import {BrowserRouter as Router} from "react-router-dom"
 import Contact from './Pages/Contact';
 import FooterContainer from './Container/Footer';
 import "./index.css";
+import Skill from "./Pages/Skill"
 import Dropdown from "./Dropdowncomponent/Dropdown";
 
 
@@ -23,6 +24,7 @@ function App() {
            <Dropdown isOpen = {isOpen} toggle ={toggle}/>
             <Home />
             <About />
+            <Skill/>
             <Projects id = "projects"/>
             <Contact/>
             <FooterContainer />
