@@ -69,17 +69,27 @@ const HeroTitle = styled.h1`
     text-align: center;
     justify-content: center;
 }`
+const Buttoncontainer = styled.a`
+margin-top:150px;
+margin-right:1050px;
+@media screen and (max-width:768px){
+    margin:0;
+}
+
+
+`
 const Button = styled.button `
 padding:20px;
-margin-top: 50px;
 width:150px;
 border-radius:5px;
+align-items:left;
+justify-content:left;
 border: none;
 @media only screen and (max-width:428px){
-    text-align:center;
-    justify-center:center;
-    margin-left:auto;
-    margin-right:auto;
+
+    
+    left:20px;
+    
     margin-top:100px;
     
 }
@@ -99,15 +109,18 @@ function Hero() {
                               autoStart:true,
                               loop: true,    
                               strings:[
-                                  "My Name is Adeoye Sulaimon",
+                                  "My Name is Sulaimon",
                                   "I'm a Web Developer",
                                   "I'm a Tech Enthusiast"
                               ],
                           }}
                          />
                     </Typewritereffect>
-                    <Button>CONTACT ME</Button>
-                </HeroContent>  
+                </HeroContent>
+                <Buttoncontainer href = "#contact">
+                        <Button>CONTACT ME</Button>
+                </Buttoncontainer>
+              
                </Herowrapper>
          </HeroSection>
     )

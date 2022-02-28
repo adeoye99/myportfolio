@@ -20,7 +20,10 @@ background-color:white;
 const Abouttitle = styled.h2`
    text-align: center;
    font-family: 'Open Sans', sans-serif;
-   margin-top:30px;
+   margin-top:20px;
+   @media screen and (max-width:768px){
+      margin:0;
+   }
 
 `
 const AboutInfo = styled.div`
@@ -34,9 +37,8 @@ const AboutInfo = styled.div`
    }
 `
 const Aboutcontent = styled.div`
-text-align:center;
-justify-content:center;
-   
+
+    text-align:center;
    font-size: 1rem;
    font-family: 'Open Sans', sans-serif;
    padding-top:100px;
@@ -44,8 +46,11 @@ justify-content:center;
    padding-right:100px;
    @media only screen and (max-width: 768px){
       width:100%;
-      padding:0;
-      margin:0;
+      padding-left:0;
+      padding-right:0;
+      padding-bottom:900px;
+      margin-bottom:100px;
+   
    
    }
 
@@ -70,7 +75,7 @@ const Imagecontainer =styled.div`
    @media screen and (max-width:768px){
       width:100%;
       margin-top:0;
-      padding-top:30px;
+      padding-top:0px;
       text-align:center;
       margin-left:0;
 

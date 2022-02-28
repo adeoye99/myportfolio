@@ -23,7 +23,9 @@ font-family: 'Open Sans', sans-serif;
 margin-top:30px;
 `
 const SkillInfo = styled.div`
- display: flex;
+height: 100vh;
+max-height: 1300px;
+display: flex;
  flex-direction:column;
  color:white;
  background-color:black;

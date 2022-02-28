@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 
 const Contacttitle = styled.h2`
  width:500px;
+
  margin-top:50px;
  text-align:center;
  font-family: 'Open Sans', sans-serif;
@@ -12,6 +13,7 @@ const Contacttitle = styled.h2`
  }
 `
 const Contactcontainer = styled.div`
+
  display:flex;
  flex-direction:column;
  margin-left:auto;
