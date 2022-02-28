@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faTwitter,
-  faInstagram
+  faInstagram,
+  faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.css";
 
@@ -21,9 +22,9 @@ export function FooterContainer() {
                  <FontAwesomeIcon icon={faGithub} size="2x" />
                  <p>Github</p>
              </a>
-             <a href="https://www.github.com/adeoye99" className="facebook social">
-                 <FontAwesomeIcon icon={faInstagram} size="2x" />
-                 <p>Instagram</p>
+             <a href="https://www.linkedin.com/in/kolawole-adeoye-0761981b2" className="facebook social">
+                 <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                 <p>Linkedin</p>
              </a>
             </Footer.Row>
             <hr/>
