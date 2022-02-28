@@ -39,7 +39,7 @@ justify-content: center;
 text-align: left;
 
 @media screen and (max-width:425px){
-    top:20px;
+    top:120px;
     justify-content: center;
     text-align: center;
     display: flex;
@@ -70,7 +70,7 @@ const HeroTitle = styled.h1`
     justify-content: center;
 }`
 const Buttoncontainer = styled(Link)`
-margin-top:150px;
+margin-top:250px;
 margin-right:1050px;
 @media screen and (max-width:768px){
     margin:0;
@@ -87,7 +87,7 @@ justify-content:left;
 border: none;
 @media only screen and (max-width:428px){
     left:20px;
-    margin-top:100px;
+    margin-top:300px;
     
 }
 
@@ -96,7 +96,7 @@ border: none;
 
 function Hero() {
         return (
-        <HeroSection>
+        <HeroSection id ="/">
              <Herowrapper>
                  <HeroContent>
                      <HeroTitle>FRONT-END DEVELOPER</HeroTitle>
@@ -106,7 +106,7 @@ function Hero() {
                               autoStart:true,
                               loop: true,    
                               strings:[
-                                  "My Name is Sulaimon",
+                                  "My Name is Adeoye Sulaimon",
                                   "I'm a Web Developer",
                                   "I'm a Tech Enthusiast"
                               ],

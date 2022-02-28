@@ -78,13 +78,13 @@ function Dropdown({isOpen,toggle}){
               </Icon>
               <DropdownWrapper>
                   <DropdownMenu>
-                  <DropdownLink to="/" spy={true} smooth={true} offset={-10} duration={500}>
+                  <DropdownLink to="/" spy={true} smooth={true} offset={50} duration={500}>
                               HOME
                           </DropdownLink>
                           <DropdownLink to="about" spy={true} smooth={true} offset={-10} duration={500}>
                               ABOUT
                           </DropdownLink>
-                          <DropdownLink to="projects" spy={true} smooth={true} offset={-10} duration={500}>
+                          <DropdownLink to="projects" spy={true} smooth={true} offset={-100} duration={500}>
                              PROJECTS
                           </DropdownLink>
                   </DropdownMenu>

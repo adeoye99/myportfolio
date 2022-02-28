@@ -7,10 +7,10 @@ function Navbar({toggle}){
                 <Bars onClick ={toggle}/>
                 <Logo>ADEOYE SULAIMON KOLAWOLE</Logo>
                   <NavMenu>
-                     <NavLink to="/" spy={true} smooth={true} offset={50} duration={500}>
+                     <NavLink to="/" spy={true} smooth={true} offset={-100} duration={500}>
                         HOME
                     </NavLink >
-                    <NavLink to="about" spy={true} smooth={true} offset={-10} duration={500}>
+                    <NavLink to="about" spy={true} smooth={true} offset={-80} duration={500}>
                         ABOUT
                     </NavLink>
                     <NavLink to="projects" spy={true} smooth={true} offset={-100} duration={500}>
