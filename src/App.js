@@ -26,7 +26,7 @@ function App() {
             <Home />
             <About />
             <Skill/>
-            <Projects id = "projects"/>
+            <Projects/>
             <Contact/>
             <FooterContainer/>
        </Router>

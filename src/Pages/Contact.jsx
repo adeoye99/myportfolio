@@ -1,6 +1,10 @@
 import React from 'react'
 import styled from "styled-components"
 import emailjs from '@emailjs/browser';
+import{ init } from '@emailjs/browser';
+const API_ID = process.env.REACT_APP_CLIENT_ID;
+init(`${API_ID}`);
+
 
 const Contacttitle = styled.h2`
  width:500px;
@@ -65,12 +69,12 @@ const Contactbutton = styled.input`
 }
 
 `
-const API_ID = process.env.REACT_APP_CLIENT_ID;
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 function Contact() {
   function sendEmail(e){
     e.preventDefault();
    
-    emailjs.sendForm('Gmail' , 'template_rgjtao7', e.target,`${API_ID}`)
+    emailjs.sendForm(`${SERVICE_ID}` , 'template_rgjtao7', e.target,`${API_ID}`)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -82,11 +86,11 @@ function Contact() {
     <Contactcontainer id = "contact">
         <Contactform onSubmit={sendEmail}>
           <Contacttitle>Contact Me</Contacttitle>
-          <Contactinput type= "text" placeholder="Name" name = "name" />
-          <Contactinput type= "email" placeholder="Email" name = "email"/>
-          <Contactinput type= "text" placeholder="Subject" name = "subject"/>
-          <Contactinputmessage type= "text" placeholder = "Message" name = "message" />
-          <Contactbutton type = "submit" value = "send" />
+          <Contactinput type = "text" placeholder="Name" name = "name" />
+          <Contactinput type = "email" placeholder="Email" name = "email"/>
+          <Contactinput type = "text" placeholder="Subject" name = "subject"/>
+          <Contactinputmessage type = "text" placeholder = "Message" name = "message" />
+          <Contactbutton type ="submit" value ="Send Message"></Contactbutton>
         </Contactform>
     </Contactcontainer>
   )
