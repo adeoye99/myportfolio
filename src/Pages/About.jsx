@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from "../Navbarcomponents/Index";
 import styled from "styled-components"
 
 const Aboutcontainer = styled.div`

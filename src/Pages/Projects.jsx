@@ -29,7 +29,7 @@ function Projects(props) {
     );
   }
   return (
-        <ProjectContainer id ={props.id}>
+        <ProjectContainer id = "projects">
           <Projecttitle>MY PROJECTS</Projecttitle>
           {Projectdatas.map(CreateProject)}
         </ProjectContainer>

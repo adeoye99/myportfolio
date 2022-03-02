@@ -1,9 +1,9 @@
-import React from 'react'
+import React,{ useRef } from 'react'
 import styled from "styled-components"
 import emailjs from '@emailjs/browser';
 import{ init } from '@emailjs/browser';
-const API_ID = process.env.REACT_APP_CLIENT_ID;
-init(`${API_ID}`);
+const REACT_APP_API_ID = process.env.REACT_APP_CLIENT_ID;
+init(`${REACT_APP_API_ID}`);
 
 
 const Contacttitle = styled.h2`
@@ -48,7 +48,7 @@ const Contactinput = styled.input`
   margin-right:auto;
 }
 `
-const Contactinputmessage = styled.input`
+const Contactinputmessage = styled.textarea`
  width:500px;
  height:100px;
  margin-top:50px;
@@ -69,12 +69,15 @@ const Contactbutton = styled.input`
 }
 
 `
-const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const REACT_APP_SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const REACT_APP_TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
 function Contact() {
+    const form = useRef();
+  
   function sendEmail(e){
     e.preventDefault();
    
-    emailjs.sendForm(`${SERVICE_ID}` , 'template_rgjtao7', e.target,`${API_ID}`)
+    emailjs.sendForm(`${REACT_APP_SERVICE_ID}`,`${REACT_APP_TEMPLATE_ID}`, form.current,`${REACT_APP_API_ID}`)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -84,13 +87,13 @@ function Contact() {
   }
   return (
     <Contactcontainer id = "contact">
-        <Contactform onSubmit={sendEmail}>
+        <Contactform ref ={form} onSubmit={sendEmail}>
           <Contacttitle>Contact Me</Contacttitle>
-          <Contactinput type = "text" placeholder="Name" name = "name" />
-          <Contactinput type = "email" placeholder="Email" name = "email"/>
+          <Contactinput type = "text" placeholder="Name" name = "user_name" />
+          <Contactinput type = "email" placeholder="Email" name = "user_email"/>
           <Contactinput type = "text" placeholder="Subject" name = "subject"/>
-          <Contactinputmessage type = "text" placeholder = "Message" name = "message" />
-          <Contactbutton type ="submit" value ="Send Message"></Contactbutton>
+          <Contactinputmessage  name = "message" />
+          <Contactbutton type ="submit" value ="Send"></Contactbutton>
         </Contactform>
     </Contactcontainer>
   )
