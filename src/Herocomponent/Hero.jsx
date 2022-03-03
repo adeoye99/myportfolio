@@ -38,7 +38,7 @@ color:white;
 justify-content: center;
 text-align: left;
 
-@media screen and (max-width:425px){
+@media screen and (max-width:768px){
     top:120px;
     justify-content: center;
     text-align: center;
@@ -46,7 +46,7 @@ text-align: left;
     flex-direction:column;
 }
 @media only screen and (width:320px){
-    right:50px;
+
 }
 `
 const Typewritereffect = styled.h1`
@@ -61,8 +61,8 @@ margin-top:50px;
 const HeroTitle = styled.h1`
      font-family: 'Montserrat',sans-serif;
      font-size:clamp(1rem,8vw,3rem);
-     text-align:center;
-     justify-content: center;
+     text-align:left;
+     justify-content:left;
 @media only screen and (max-width:768px){
     margin-left:auto;
     margin-right:auto;
@@ -72,6 +72,11 @@ const HeroTitle = styled.h1`
 const Buttoncontainer = styled(Link)`
 margin-top:250px;
 margin-right:1050px;
+@media only screen and (width:1024px){
+   align-items:left;
+   margin-left:300px;
+   margin-top:300px;
+}
 @media screen and (max-width:768px){
     margin:0;
 }
@@ -85,7 +90,8 @@ border-radius:5px;
 align-items:left;
 justify-content:left;
 border: none;
-@media only screen and (max-width:428px){
+
+@media only screen and (max-width:768px){
     left:20px;
     margin-top:300px;
     

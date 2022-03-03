@@ -8,7 +8,8 @@ init(`${REACT_APP_API_ID}`);
 
 const Contacttitle = styled.h2`
  width:500px;
-
+ margin-left:auto;
+ margin-right:auto;
  margin-top:50px;
  text-align:center;
  font-family: 'Open Sans', sans-serif;
@@ -87,8 +88,9 @@ function Contact() {
   }
   return (
     <Contactcontainer id = "contact">
-        <Contactform ref ={form} onSubmit={sendEmail}>
-          <Contacttitle>Contact Me</Contacttitle>
+         <Contacttitle>Contact Me</Contacttitle>
+        <Contactform data-aos ="fade-left" ref ={form} onSubmit={sendEmail}>
+       
           <Contactinput type = "text" placeholder="Name" name = "user_name" />
           <Contactinput type = "email" placeholder="Email" name = "user_email"/>
           <Contactinput type = "text" placeholder="Subject" name = "subject"/>

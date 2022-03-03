@@ -18,6 +18,7 @@ const DropdownContainer = styled.div`
   top: ${({isOpen}) => (isOpen ? '0':'-100%')};
   @media screen and (max-width:768px){
       height:50%;
+      width:80%
   }
 `
 

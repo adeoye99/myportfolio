@@ -40,13 +40,13 @@ display: flex;
 
 function Skill() {
   return (
-    <SkillInfo>
+    <SkillInfo >
         <SKilltitle>My Skills</SKilltitle>
-         <Skillcontent>HTML</Skillcontent>
-         <Skillcontent>CSS</Skillcontent>
-         <Skillcontent>JAVASCRIPT</Skillcontent>
-         <Skillcontent>REACTJS</Skillcontent>
-         <Skillcontent>BOOTSTRAP</Skillcontent>
+         <Skillcontent data-aos="fade-down-right">HTML</Skillcontent>
+         <Skillcontent data-aos="fade-down-right">CSS</Skillcontent>
+         <Skillcontent data-aos="fade-down-right">JAVASCRIPT</Skillcontent>
+         <Skillcontent data-aos="fade-down-right">REACTJS</Skillcontent>
+         <Skillcontent data-aos="fade-down-right">BOOTSTRAP</Skillcontent>
     </SkillInfo>
   )
 }

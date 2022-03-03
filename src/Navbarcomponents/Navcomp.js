@@ -3,13 +3,19 @@ import styled from "styled-components";
 import { Link } from "react-scroll"
 
 export const Nav = styled.nav`
-position:fixed;
+width:100%;
 background-color: white;
 color: black;
 height: 85px;
 display: flex;
-width:100%;
-z-index: 999;
+position: sticky;
+top:0;
+z-index:999;
+@media screen and (max-width:768px){
+	position:sticky;
+	z-index:100;
+	
+}
 `; 
 
 export const NavLink = styled(Link)`
@@ -20,14 +26,20 @@ margin-left: 100px;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
-height: 100%;
+height: 80%;
 cursor: pointer;
 font-family: 'Open Sans', sans-serif;
+top:0;
+z-index:100;
+
 &.active {
-	color: black;
+	border-bottom: 2px solid black;
 }
 &:hover{
-	text-decoration: underline;
+	text-decoration: none;
+}
+@media only screen and (max-width:1024px){
+	margin-left:80px;
 }
 @media only screen and (max-width:768px){
 	margin:0;
@@ -51,8 +63,9 @@ color: #808080;
 export const NavMenu = styled.div`
 display: flex;
 align-items: center;
-margin-right:auto;
+margin-right: -24px;
 white-space: nowrap; 
+z-index:100;
 @media screen and (max-width: 768px) {
 	display: none;
 }

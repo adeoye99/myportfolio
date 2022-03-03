@@ -14,7 +14,7 @@ export function FooterContainer() {
   return( <Footer>
           <Footer.Wrapper>
             <Footer.Row>
-              <a href="https://www.twitter.com" className="twitter social">
+              <a href="https://twitter.com/SulaimonAdeoye5" className="twitter social">
                  <FontAwesomeIcon icon={faTwitter} size="2x" />
                  <p>Twitter</p>
              </a>

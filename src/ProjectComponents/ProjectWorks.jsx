@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+
 
 const ProjectWork = styled.div`
 width:50%;
@@ -30,6 +30,7 @@ height: 50px;
 width:100%;
 font-size: 1rem;
 color: white;
+font-family: 'Open Sans', sans-serif;
 border-radius:0 0 15px 15px;
 background-color: black;
 &:hover{
@@ -42,14 +43,14 @@ background-color: black;
 const ProjectAbout = styled.div`
  display: flex;
  flex-direction:column:
- 
-  padding-right:50px;
+ font-family: 'Open Sans', sans-serif;
+  justify-content:center;
  word-wrap: break-word;
  background-color:black;
  color:white;
   @media only screen and (max-width:768px){
     flex-direction:column;
-    font-size:9px;
+    font-size:0.75rem;
     
   
   }
@@ -57,11 +58,12 @@ const ProjectAbout = styled.div`
 const ProjectLink = styled.a`
 color: black;
 margin:0;
+text-decoration:none;
  
 `
 function ProjectWorks(props){
   return (
-       <ProjectWork>
+       <ProjectWork data-aos = "fade-left">
            <ProjectLink href =  {`${props.link}`}>
               <ProjectImage src = {props.img}/>
               <ProjectContent>
