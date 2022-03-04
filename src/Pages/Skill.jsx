@@ -40,7 +40,7 @@ display: flex;
 
 function Skill() {
   return (
-    <SkillInfo >
+    <SkillInfo  id ="skills">
         <SKilltitle>My Skills</SKilltitle>
          <Skillcontent data-aos="fade-down-right">HTML</Skillcontent>
          <Skillcontent data-aos="fade-down-right">CSS</Skillcontent>

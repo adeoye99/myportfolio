@@ -3,6 +3,7 @@ import styled from "styled-components";
 import menuData from "../Data/menuData";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll"
+import "./Dropdown.css"
 const DropdownContainer = styled.div`
   position : fixed;
   z-index: 999;
@@ -17,8 +18,8 @@ const DropdownContainer = styled.div`
   opacity: ${({isOpen}) => (isOpen ? '1': '0' )};
   top: ${({isOpen}) => (isOpen ? '0':'-100%')};
   @media screen and (max-width:768px){
-      height:50%;
-      width:80%
+      height:40.9%;
+      width:100%
   }
 `
 
@@ -56,12 +57,13 @@ const DropdownLink = styled(Link)`
  text-decoration:none;
  color:black;
  cursor:pointer;
- padding-top:30px;
+ padding-top:40px;
  padding-left:10px;
  
  transition: 0.2s ease-in-out;
  @media screen and (max-width:768px){
      font-size:1rem;
+    
  }
  
  &:hover{
@@ -85,9 +87,13 @@ function Dropdown({isOpen,toggle}){
                           <DropdownLink to="about" spy={true} smooth={true} offset={-10} duration={500}>
                               ABOUT
                           </DropdownLink>
-                          <DropdownLink to="projects" spy={true} smooth={true} offset={-100} duration={500}>
+                          <DropdownLink to="skills" spy={true} smooth={true} offset={-100} duration={500}>
+                             SKILLS
+                          </DropdownLink>
+                          <DropdownLink className = "projects" to="projects" spy={true} smooth={true} offset={-100} duration={500}>
                              PROJECTS
                           </DropdownLink>
+
                   </DropdownMenu>
               </DropdownWrapper>
           </DropdownContainer>

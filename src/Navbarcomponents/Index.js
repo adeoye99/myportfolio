@@ -13,6 +13,9 @@ function Navbar({toggle}){
                     <NavLink to="about" spy={true} smooth={true} offset={-80} duration={500}>
                         ABOUT
                     </NavLink>
+                    <NavLink to="skills" spy={true} smooth={true} offset={-80} duration={500}>
+                        MY SKILLS
+                    </NavLink>
                     <NavLink to="projects" spy={true} smooth={true} offset={-100} duration={500}>
                         PROJECTS
                     </NavLink>

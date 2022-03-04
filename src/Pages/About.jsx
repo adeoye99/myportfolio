@@ -9,8 +9,6 @@ background-color:white;
 
 
 @media screen and (max-width: 768px){
-   height:100vh;
-   max-height: 1300px;
    width:100%;
    
 
@@ -23,32 +21,30 @@ const Abouttitle = styled.h2`
    font-family: 'Open Sans', sans-serif;
    margin-top:20px;
    @media screen and (max-width:768px){
-      margin-top:20px;
+      margin-top:50px;
    }
 
 `
 const AboutInfo = styled.div`
 
-   margin-top: 150px;
+   margin-top: 80px;
    @media only screen and (max-width:1440px){
-      margin-top:0;
    }
    @media only screen and (width:768px){
       width:60%;
       margin-left:auto;
       margin-right:auto;
-      margin-top:40px;
+      margin-top:10px;
 
    }
   
-   @media only screen and (max-width: 768px){
-     margin-top:10px;
-        
+   @media only screen and (max-width: 425px){
+      margin-top:0px;
+   
    
    }
 `
 const Aboutcontent = styled.div`
-
     text-align:center;
    font-size: 1rem;
    font-family: 'Open Sans', sans-serif;
@@ -61,16 +57,14 @@ const Aboutcontent = styled.div`
       padding:0;
       margin-left:auto;
       margin-right:auto;
-   
-      
-   
-   
-   
+      padding-top:320px;
+      margin-top:80px;
    }
 
 `
 
 const Aboutimage = styled.img`
+text-align:center;
 max-width: 50%;
 height:auto;
 border-radius:50%;
@@ -78,16 +72,13 @@ border-radius:50%;
     margin:0;
 }
 @media screen and(max-width:768px){
-   width:25%;
-   
-   
-
+   width:50%;
+  
 }
 `
 const Imagecontainer =styled.div`
-   float:left;
-   justify-content:center;
-   text-align:center;
+    float:left;
+    text-align:center;
    @media only screen and (max-width: 1024px){
       width:50%;
    }
@@ -98,11 +89,11 @@ const Imagecontainer =styled.div`
 
    @media screen and (max-width:768px){
       width:100%;
-      margin-top:0;
+      margin-top:10px;
       padding-top:0px;
       text-align:center;
-      margin-left:0;
-      margin-bottom:50px;
+     
+      margin-bottom:10px;
 
    }
 
@@ -115,10 +106,11 @@ function About() {
   return( <Aboutcontainer  id ="about">
                   <Abouttitle>About Me</Abouttitle>
                   <AboutInfo>
-                       <Imagecontainer>
-                        <Aboutimage data-aos ="fade-right"src = "/Images/sulaimon.jpg"/>
-                        </Imagecontainer>
-                        <Aboutcontent data-aos ="fade-left">Hello! My Name is Adeoye Sulaimon Kolawole I am a frontend developer i enjoy creating user interfaces i ave worked on projects like streaming site,an  ecommerce web app, Spacestargram(using the NASA api),weather read i try to always learn new things everyday  </Aboutcontent>
+                     <Imagecontainer data-aos ="fade-right">
+                     <Aboutimage src = "/Images/sulaimon.jpg"/>
+
+                     </Imagecontainer>
+                        <Aboutcontent data-aos ="fade-left">Hello! My Name is Adeoye Sulaimon Kolawole I am a frontend developer i enjoy creating user interfaces i ave worked on projects like a streaming site,an  ecommerce web app, Spacestargram(using the NASA api)My goal is continous self development </Aboutcontent>
                   </AboutInfo>
              
     </Aboutcontainer>

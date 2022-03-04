@@ -63,7 +63,7 @@ text-decoration:none;
 `
 function ProjectWorks(props){
   return (
-       <ProjectWork data-aos = "fade-left">
+       <ProjectWork data-aos = "flip-left">
            <ProjectLink href =  {`${props.link}`}>
               <ProjectImage src = {props.img}/>
               <ProjectContent>

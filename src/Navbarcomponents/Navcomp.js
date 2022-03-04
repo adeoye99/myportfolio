@@ -12,7 +12,7 @@ position: sticky;
 top:0;
 z-index:999;
 @media screen and (max-width:768px){
-	position:sticky;
+	height:50px;
 	z-index:100;
 	
 }
@@ -53,6 +53,7 @@ color: #808080;
 	display:block;
 	position:absolute;
 	right: 0;
+	bottom:32px;
 	color:black;
 	transform: translate(-100%, 75%);
 	font-size: 1.8rem;

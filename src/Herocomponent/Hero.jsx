@@ -39,7 +39,7 @@ justify-content: center;
 text-align: left;
 
 @media screen and (max-width:768px){
-    top:120px;
+    top:150px;
     justify-content: center;
     text-align: center;
     display: flex;
@@ -105,14 +105,14 @@ function Hero() {
         <HeroSection id ="/">
              <Herowrapper>
                  <HeroContent>
-                     <HeroTitle>FRONT-END DEVELOPER</HeroTitle>
+                     <HeroTitle>ADEOYE SULAIMON KOLAWOLE</HeroTitle>
                     <Typewritereffect>
                          <Typewriter
                           options= {{
                               autoStart:true,
                               loop: true,    
                               strings:[
-                                  "My Name is Adeoye Sulaimon",
+                                  "Hello My Name is Adeoye Sulaimon",
                                   "I'm a Web Developer",
                                   "I'm a Tech Enthusiast"
                               ],
