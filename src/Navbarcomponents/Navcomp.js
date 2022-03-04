@@ -21,8 +21,8 @@ z-index:999;
 export const NavLink = styled(Link)`
 color: black;
 display: flex;
-font-size: 1.1rem;
-margin-left: 100px;
+font-size: 1rem;
+margin-left: 60px;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;

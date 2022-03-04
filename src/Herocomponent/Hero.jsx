@@ -71,7 +71,7 @@ const HeroTitle = styled.h1`
 }`
 const Buttoncontainer = styled(Link)`
 margin-top:250px;
-margin-right:1050px;
+margin-right:1100px;
 @media only screen and (width:1024px){
    align-items:left;
    margin-left:300px;

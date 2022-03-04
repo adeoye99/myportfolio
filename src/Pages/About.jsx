@@ -110,7 +110,7 @@ function About() {
                      <Aboutimage src = "/Images/sulaimon.jpg"/>
 
                      </Imagecontainer>
-                        <Aboutcontent data-aos ="fade-left">Hello! My Name is Adeoye Sulaimon Kolawole I am a frontend developer i enjoy creating user interfaces i ave worked on projects like a streaming site,an  ecommerce web app, Spacestargram(using the NASA api)My goal is continous self development </Aboutcontent>
+                        <Aboutcontent data-aos ="fade-left">Hello! My Name is Adeoye Sulaimon Kolawole I am a frontend developer i enjoy creating user interfaces i ave worked on projects like a streaming site,an  ecommerce web app, Spacestargram(using the NASA api)  </Aboutcontent>
                   </AboutInfo>
              
     </Aboutcontainer>
