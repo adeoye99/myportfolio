@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "kolawole-adeoye",
+    "site":"kolawole-adeoye",
     "public": "build",
     "ignore": [
       "firebase.json",

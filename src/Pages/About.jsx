@@ -18,7 +18,7 @@ background-color:white;
 `
 const Abouttitle = styled.h2`
    text-align: center;
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Roboto Mono', monospace;
    margin-top:20px;
    @media screen and (max-width:768px){
       margin-top:50px;
@@ -47,7 +47,7 @@ const AboutInfo = styled.div`
 const Aboutcontent = styled.div`
     text-align:center;
    font-size: 1rem;
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Roboto Mono', monospace;
    padding-top:100px;
    padding-left:100px;
    padding-right:100px;

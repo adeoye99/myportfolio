@@ -34,7 +34,7 @@ width:100%;
 font-size: 1rem;
 border:none;
 color: white;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Mono', monospace;
 border-radius:0 0 15px 15px;
 background-color: black;
 &:hover{
@@ -47,7 +47,7 @@ background-color: black;
 const ProjectAbout = styled.div`
  display: flex;
  flex-direction:column:
- font-family: 'Open Sans', sans-serif;
+ font-family: 'Roboto Mono', monospace;
   justify-content:center;
  word-wrap: break-word;
  background-color:black;

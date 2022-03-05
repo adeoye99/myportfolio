@@ -40,8 +40,8 @@ function Skill() {
   return (
     <SkillInfo  id ="skills">
         <SKilltitle>My Skills</SKilltitle>
-         <Skillcontent data-aos="fade-down-right">HTML</Skillcontent>
-         <Skillcontent data-aos="fade-down-right">CSS</Skillcontent>
+         <Skillcontent data-aos="fade-down-right">HTML5</Skillcontent>
+         <Skillcontent data-aos="fade-down-right">CSS3</Skillcontent>
          <Skillcontent data-aos="fade-down-right">JAVASCRIPT</Skillcontent>
          <Skillcontent data-aos="fade-down-right">REACTJS</Skillcontent>
          <Skillcontent data-aos="fade-down-right">BOOTSTRAP</Skillcontent>
