@@ -43,6 +43,7 @@ const Contactinput = styled.input`
  width:500px;
  height:30px;
  margin-top:50px;
+ font-family: 'Open Sans', sans-serif;
  @media screen and (max-width:768px){
   width:90%;
   margin-left:auto;
@@ -53,6 +54,9 @@ const Contactinputmessage = styled.textarea`
  width:500px;
  height:100px;
  margin-top:50px;
+ padding-top:5px;
+ padding-left:5px;
+ font-family: 'Open Sans', sans-serif;
  @media screen and (max-width:768px){
   width:90%;
   margin-left:auto;
@@ -94,7 +98,7 @@ function Contact() {
           <Contactinput type = "text" placeholder="Name" name = "user_name" />
           <Contactinput type = "email" placeholder="Email" name = "user_email"/>
           <Contactinput type = "text" placeholder="Subject" name = "subject"/>
-          <Contactinputmessage  name = "message" />
+          <Contactinputmessage  placeholder ="Your message" name = "message" />
           <Contactbutton type ="submit" value ="Send"></Contactbutton>
         </Contactform>
     </Contactcontainer>

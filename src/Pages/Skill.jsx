@@ -34,9 +34,7 @@ display: flex;
  padding-bottom:50px;
  @media only screen and (max-width: 768px){
    width: 100%;
-}
- 
-`
+ }`
 
 function Skill() {
   return (
@@ -47,6 +45,7 @@ function Skill() {
          <Skillcontent data-aos="fade-down-right">JAVASCRIPT</Skillcontent>
          <Skillcontent data-aos="fade-down-right">REACTJS</Skillcontent>
          <Skillcontent data-aos="fade-down-right">BOOTSTRAP</Skillcontent>
+         <Skillcontent data-aos="fade-down-right">REDUX</Skillcontent>
     </SkillInfo>
   )
 }

@@ -29,7 +29,7 @@ export function FooterContainer() {
             </Footer.Row>
             <hr/>
             <span class ="footer__year">
-              Copyright © {currentyear}
+              Copyright {currentyear} © Adeoye Kolawole
           </span>
          </Footer.Wrapper>
         

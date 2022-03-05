@@ -50,6 +50,8 @@ export const Bars = styled(FaBars)`
 display:none;
 color: #808080;
 @media  only screen and (max-width: 768px) {
+	height:20px;
+	width:20px;
 	display:block;
 	position:absolute;
 	right: 0;

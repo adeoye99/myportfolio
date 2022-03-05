@@ -9,6 +9,9 @@ border-radius:15px;
 margin-left: auto;
 margin-right:auto;
 margin-top: 30px;
+@media screen and (max-width:768px){
+  width:80%;
+}
 
 `
 
@@ -29,6 +32,7 @@ margin-bottom:0;
 height: 50px;
 width:100%;
 font-size: 1rem;
+border:none;
 color: white;
 font-family: 'Open Sans', sans-serif;
 border-radius:0 0 15px 15px;
