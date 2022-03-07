@@ -58,7 +58,7 @@ const Aboutcontent = styled.div`
       text-align:left;
       margin-left:auto;
       margin-right:auto;
-      padding-top:320px;
+      padding-top:20px;
       margin-top:80px;
    }
 

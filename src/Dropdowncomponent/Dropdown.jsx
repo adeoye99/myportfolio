@@ -5,21 +5,17 @@ import { FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll"
 import "./Dropdown.css"
 const DropdownContainer = styled.div`
-  position : fixed;
+ position:fixed;
   z-index: 999;
-  width: 100%;
-  height:25%;
-  background:white ;
+ width:100%;
+  height:50%;
+  background:white;
   display: grid;
-  align-items:center;
-  top:0px;
+  top:0;
   left:0;
   transition: 0.3s ease-in-out;
   opacity: ${({isOpen}) => (isOpen ? '1': '0' )};
   top: ${({isOpen}) => (isOpen ? '0':'-100%')};
-  @media screen and (max-width:768px){
-      height:40.9%;
-  }
 `
 
 const Icon = styled.div`
@@ -29,7 +25,7 @@ right: 1.1rem;
 background: transparent;
 font-size: 2rem;
 cursor: pointer;
-outline: none
+outline: none;
 `
 
 const CloseIcon = styled(FaTimes)`
@@ -44,31 +40,31 @@ text-align: center;
 
 `
 const DropdownLink = styled(Link)`
- display:flex;
- align-item: left;
- justify-content: left;
- 
- border-bottom:1px solid black ;
- border-left:white;
- border-right:white;
- color:black;
- font-size: 1.3rem;
- text-decoration:none;
- color:black;
- cursor:pointer;
- padding-top:40px;
- padding-left:10px;
- 
- transition: 0.2s ease-in-out;
- @media screen and (max-width:768px){
-     font-size:1rem;
+display:flex;
+align-item: left;
+justify-content: left;
+
+border-bottom:1px solid black ;
+border-left:white;
+border-right:white;
+color:black;
+font-size: 1.3rem;
+text-decoration:none;
+color:black;
+cursor:pointer;
+padding-top:40px;
+padding-left:10px;
+
+transition: 0.2s ease-in-out;
+@media screen and (max-width:768px){
+    font-size:1rem;
+   
+}
+
+&:hover{
+    color: black;
     
- }
- 
- &:hover{
-     color: black;
-     
- }
+}
 `
 
 function Dropdown({isOpen,toggle}){

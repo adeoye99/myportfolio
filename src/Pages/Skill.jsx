@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+import "./Skill.css"
 
 const SKilltitle = styled.h2`
 display:flex;
@@ -15,9 +16,10 @@ margin-top:30px;
 
  
 `
-const Skillcontent= styled.div`
+const Skillcontent= styled.i`
 text-align:center;
 justify-content:center;
+font-size:2.5rem;
 
 font-family: 'Open Sans', sans-serif;
 margin-top:30px;
@@ -26,7 +28,7 @@ const SkillInfo = styled.div`
 height: 100vh;
 max-height: 1300px;
 display: flex;
- flex-direction:column;
+ flex-direction:row;
  color:white;
  background-color:black;
  justify-content:center;
@@ -38,15 +40,15 @@ display: flex;
 
 function Skill() {
   return (
-    <SkillInfo  id ="skills">
-        <SKilltitle>My Skills</SKilltitle>
-         <Skillcontent data-aos="fade-down-right">HTML5</Skillcontent>
-         <Skillcontent data-aos="fade-down-right">CSS3</Skillcontent>
-         <Skillcontent data-aos="fade-down-right">JAVASCRIPT</Skillcontent>
-         <Skillcontent data-aos="fade-down-right">REACTJS</Skillcontent>
-         <Skillcontent data-aos="fade-down-right">BOOTSTRAP</Skillcontent>
-         <Skillcontent data-aos="fade-down-right">REDUX</Skillcontent>
-    </SkillInfo>
+    <Skill>
+        <SkillInfo  id ="skills">
+           <i data-aos="fade-down-right" class="devicon-javascript-plain colored"></i>
+           <i data-aos="fade-down-right" class="devicon-css3-plain-wordmark colored"></i>
+           <i data-aos="fade-down-right" class="devicon-react-original-wordmark colored"></i>
+           <i data-aos="fade-down-right" class="devicon-html5-plain-wordmark colored"></i>
+           <i  data-aos="fade-down-right" class="devicon-bootstrap-plain-wordmark colored"></i>
+        </SkillInfo>
+     </Skill>
   )
 }
 

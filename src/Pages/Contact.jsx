@@ -65,6 +65,9 @@ const Contactinputmessage = styled.textarea`
 `
 const Contactbutton = styled.input`
  width:100px;
+ color:white;
+ background-color:black;
+ border:none;
  justify-content:center;
  text-align:center;
  margin-top:50px;

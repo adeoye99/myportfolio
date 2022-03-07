@@ -8,12 +8,11 @@ background-color: white;
 color: black;
 height: 85px;
 display: flex;
-position: sticky;
+position: fixed;
 top:0;
 z-index:999;
 @media screen and (max-width:768px){
 	height:50px;
-	z-index:100;
 	
 }
 `; 
