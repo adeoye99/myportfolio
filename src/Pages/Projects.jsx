@@ -39,7 +39,7 @@ function Projects(props) {
   return (
         <ProjectContainer id = "projects">
           <Projecttitle>MY PROJECTS</Projecttitle>
-          <Projectclick>Click to view projects</Projectclick>
+          <Projectclick>Click on the projects to view</Projectclick>
           {Projectdatas.map(CreateProject)}
         </ProjectContainer>
           

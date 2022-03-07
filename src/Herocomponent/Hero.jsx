@@ -112,9 +112,9 @@ function Hero() {
                               autoStart:true,
                               loop: true,    
                               strings:[
-                                  "Hello My Name is Adeoye Sulaimon",
-                                  "I'm a Web Developer",
-                                  "I'm a Tech Enthusiast"
+                                  "Hello! Welcome to my site",
+                                  "My name is Adeoye Sulaimon",
+                                  "I'm a Front-end Developer",
                               ],
                           }}
                          />

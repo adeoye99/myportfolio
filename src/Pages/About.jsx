@@ -47,7 +47,7 @@ const AboutInfo = styled.div`
 const Aboutcontent = styled.div`
     text-align:center;
    font-size: 1rem;
-   font-family: 'Roboto Mono', monospace;
+   
    padding-top:100px;
    padding-left:100px;
    padding-right:100px;
@@ -55,6 +55,7 @@ const Aboutcontent = styled.div`
    @media only screen and (max-width: 768px){
       width:80%;
       padding:0;
+      text-align:left;
       margin-left:auto;
       margin-right:auto;
       padding-top:320px;
@@ -110,7 +111,7 @@ function About() {
                      <Aboutimage src = "/Images/sulaimon.jpg"/>
 
                      </Imagecontainer>
-                        <Aboutcontent data-aos ="fade-left">Hello! My Name is Adeoye Sulaimon Kolawole I am a frontend developer i enjoy creating user interfaces i ave worked on projects like a streaming site,an  ecommerce web app, Spacestargram(using the NASA api)  </Aboutcontent>
+                        <Aboutcontent data-aos ="fade-left">Hello! My Name is Adeoye Sulaimon Kolawole I am a web developer based in Lagos,Nigeria.My main focus at the moment is frontend development hoping to become a full stack developer in a couple of years.I enjoy being creative and building attractive user interfaces i ave worked on projects like a streaming site,an  ecommerce web app, Spacestargram(using the NASA api)  </Aboutcontent>
                   </AboutInfo>
              
     </Aboutcontainer>
