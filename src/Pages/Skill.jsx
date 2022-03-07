@@ -4,12 +4,10 @@ import "./Skill.css"
 const SkillWrapper = styled.div`
 height: 100vh;
 max-height: 1300px;
-display: flex;
-flex-direction:row;
+
  color:white;
  background-color:black;
- justify-content:center;
- text-align:center;
+
  padding-bottom:50px;
  @media only screen and (max-width: 768px){
    width: 100%;
@@ -17,15 +15,13 @@ flex-direction:row;
  
  `
 const SKilltitle = styled.h2`
-display:flex;
-margin-left:auto;
-margin-right:auto;
-
-text-align:center;
-justify-content:center;
-font-family: 'Open Sans', sans-serif;
 margin-top:30px;
+text-align:center;
+
+font-family: 'Open Sans', sans-serif;
+
 @media only screen and (max-width: 768px){
+  margin-top:10px;
    text-align: center;
    justify-content:center;
 }
@@ -41,10 +37,14 @@ font-family: 'Open Sans', sans-serif;
 margin-top:30px;
 `
 const SkillInfo = styled.div`
-margin:auto;
 display:flex;
 flex-direction:row;
+margin-top:180px;
+padding:auto;
 @media only screen and (max-width:768px){
+  margin-top:0;
+  margin-left:auto;
+  margin-right:auto;
   flex-direction:column;
 }
  
@@ -52,9 +52,9 @@ flex-direction:row;
 
 function Skill() {
   return (
-    <SkillWrapper>
+    <SkillWrapper id ="skills">
       <SKilltitle>My Skills</SKilltitle>
-        <SkillInfo  id ="skills">
+        <SkillInfo  >
            <i data-aos="fade-down-right" class="devicon-javascript-plain colored"></i>
            <i data-aos="fade-down-right" class="devicon-css3-plain-wordmark colored"></i>
            <i data-aos="fade-down-right" class="devicon-react-original-wordmark colored"></i>
