@@ -8,7 +8,7 @@ const DropdownContainer = styled.div`
  position:fixed;
   z-index: 999;
  width:100%;
-  height:50%;
+  height:45%;
   background:white;
   display: grid;
   top:0;
@@ -31,7 +31,9 @@ outline: none;
 const CloseIcon = styled(FaTimes)`
 color:black;
 `
-const DropdownWrapper= styled.div``
+const DropdownWrapper= styled.div`
+margin-top:30px;
+`
 const DropdownMenu = styled.div`
 display: grid;
 grid-template-column: 1fr;
@@ -43,8 +45,6 @@ const DropdownLink = styled(Link)`
 display:flex;
 align-item: left;
 justify-content: left;
-
-border-bottom:1px solid black ;
 border-left:white;
 border-right:white;
 color:black;
@@ -79,13 +79,13 @@ function Dropdown({isOpen,toggle}){
                   <DropdownLink to="/" spy={true} smooth={true} offset={50} duration={500}>
                               HOME
                           </DropdownLink>
-                          <DropdownLink to="about" spy={true} smooth={true} offset={-10} duration={500}>
+                          <DropdownLink to="about" spy={true} smooth={true} offset={-25} duration={500}>
                               ABOUT
                           </DropdownLink>
-                          <DropdownLink to="skills" spy={true} smooth={true} offset={-100} duration={500}>
+                          <DropdownLink to="skills" spy={true} smooth={true} offset={-50} duration={500}>
                              SKILLS
                           </DropdownLink>
-                          <DropdownLink className = "projects" to="projects" spy={true} smooth={true} offset={-100} duration={500}>
+                          <DropdownLink className = "projects" to="projects" spy={true} smooth={true} offset={-50} duration={500}>
                              PROJECTS
                           </DropdownLink>
 

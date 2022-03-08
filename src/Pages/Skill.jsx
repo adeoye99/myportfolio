@@ -21,7 +21,7 @@ text-align:center;
 font-family: 'Open Sans', sans-serif;
 
 @media only screen and (max-width: 768px){
-  margin-top:40px;
+  margin-top:20px;
    text-align: center;
    justify-content:center;
 }
@@ -42,7 +42,7 @@ flex-direction:row;
 margin-top:180px;
 padding:auto;
 @media only screen and (max-width:768px){
-  margin-top:0;
+  margin-top:40px;
   margin-left:auto;
   margin-right:auto;
   flex-direction:column;

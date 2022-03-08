@@ -21,7 +21,7 @@ const Abouttitle = styled.h2`
    font-family: 'Open Sans', sans-serif;
    margin-top:20px;
    @media screen and (max-width:768px){
-      margin-top:30px;
+      margin-top:20px;
    }
 
 `
@@ -54,12 +54,11 @@ const Aboutcontent = styled.div`
 
    @media only screen and (max-width: 768px){
       width:80%;
-      padding:0;
+      padding:0px;
       text-align:left;
       margin-left:auto;
       margin-right:auto;
-      padding-top:20px;
-      margin-top:80px;
+      margin-top:340px;
    }
 
 `
@@ -90,7 +89,7 @@ const Imagecontainer =styled.div`
 
    @media screen and (max-width:768px){
       width:100%;
-      margin-top:px;
+      margin-top:80px;
       padding-top:0px;
       text-align:center;
      

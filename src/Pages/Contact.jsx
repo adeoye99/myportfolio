@@ -14,6 +14,7 @@ const Contacttitle = styled.h2`
  text-align:center;
  font-family: 'Open Sans', sans-serif;
  @media screen and (max-width:768px){
+   margin-top:20px;
    width:100%;
  }
 `
@@ -65,6 +66,8 @@ const Contactinputmessage = styled.textarea`
 `
 const Contactbutton = styled.input`
  width:100px;
+ height:30px;
+ border-radius:5px;
  color:white;
  background-color:black;
  border:none;
@@ -72,7 +75,7 @@ const Contactbutton = styled.input`
  text-align:center;
  margin-top:50px;
  @media screen and (max-width:768px){
-   margin-left:5%;
+   margin-left:15px;
 
 }
 
