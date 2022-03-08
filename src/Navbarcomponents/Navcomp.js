@@ -84,7 +84,7 @@ export const Logo = styled.h4`
 	   display:flex;
 	   margin-left:10px;
       flex-direction:column;
-	  font-size:12px;
+	  font-size:15px;
 
     }
 

@@ -18,10 +18,10 @@ background-color:white;
 `
 const Abouttitle = styled.h2`
    text-align: center;
-   font-family: 'Roboto Mono', monospace;
+   font-family: 'Open Sans', sans-serif;
    margin-top:20px;
    @media screen and (max-width:768px){
-      margin-top:50px;
+      margin-top:30px;
    }
 
 `
@@ -45,7 +45,7 @@ const AboutInfo = styled.div`
    }
 `
 const Aboutcontent = styled.div`
-    text-align:center;
+    text-align:left;
    font-size: 1rem;
    
    padding-top:100px;
@@ -90,7 +90,7 @@ const Imagecontainer =styled.div`
 
    @media screen and (max-width:768px){
       width:100%;
-      margin-top:10px;
+      margin-top:px;
       padding-top:0px;
       text-align:center;
      
@@ -111,7 +111,7 @@ function About() {
                      <Aboutimage src = "/Images/sulaimon.jpg"/>
 
                      </Imagecontainer>
-                        <Aboutcontent data-aos ="fade-left">Hello! My Name is Adeoye Sulaimon Kolawole I am a web developer based in Lagos,Nigeria.My main focus at the moment is frontend development hoping to become a full stack developer in a couple of years.I enjoy being creative and building attractive user interfaces i ave worked on projects like a streaming site,an  ecommerce web app, Spacestargram(using the NASA api)  </Aboutcontent>
+                        <Aboutcontent data-aos ="fade-left">Hello! My Name is Adeoye Sulaimon Kolawole I am a web developer based in Lagos,Nigeria.My main focus at the moment is frontend development hoping to become a full stack developer in a couple of years.I enjoy being creative and building attractive user interfaces. I ave worked on projects like a streaming site,an  ecommerce web app, Spacestargram(using the NASA api)  </Aboutcontent>
                   </AboutInfo>
              
     </Aboutcontainer>

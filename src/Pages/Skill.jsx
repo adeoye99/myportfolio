@@ -15,13 +15,13 @@ max-height: 1300px;
  
  `
 const SKilltitle = styled.h2`
-margin-top:30px;
+margin-top:28px;
 text-align:center;
 
 font-family: 'Open Sans', sans-serif;
 
 @media only screen and (max-width: 768px){
-  margin-top:10px;
+  margin-top:40px;
    text-align: center;
    justify-content:center;
 }
