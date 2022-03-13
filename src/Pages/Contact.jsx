@@ -38,6 +38,7 @@ const Contactform = styled.form`
  margin-top:30px;
  @media screen and (max-width:768px){
   width:100%;
+  margin-top: 15px;
 }
 `
 const Contactinput = styled.input`
