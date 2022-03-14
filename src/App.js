@@ -13,7 +13,13 @@ import Dropdown from "./Dropdowncomponent/Dropdown";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
+function Resume (){
+  return(
+    <Router>
 
+    </Router>
+  )
+} 
 
 
 
@@ -37,6 +43,7 @@ function App() {
             <Projects/>
             <Contact/>
             <FooterContainer/>
+
        </Router>
       </div>
   
