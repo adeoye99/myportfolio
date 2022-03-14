@@ -121,7 +121,7 @@ function Hero() {
                     </Typewritereffect>
                 </HeroContent>
                 <Buttoncontainer to="contact" spy={true} smooth={true} offset={-10} duration={500}> 
-                        <Button>CONTACT ME</Button>
+                        <Button>GET RESUME</Button>
                 </Buttoncontainer>
               
                </Herowrapper>
