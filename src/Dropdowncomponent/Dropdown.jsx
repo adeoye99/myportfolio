@@ -88,7 +88,7 @@ function Dropdown({isOpen,toggle}){
                           <DropdownLink className = "projects" to="projects" spy={true} smooth={true} offset={-50} duration={500}>
                              PROJECTS
                           </DropdownLink>
-                           <DropdownLink className = "projects" to="projects" spy={true} smooth={true} offset={-50} duration={500}>
+                           <DropdownLink className = "/resume" to="projects" spy={true} smooth={true} offset={-50} duration={500}>
                              GET RESUME
                           </DropdownLink>
 
