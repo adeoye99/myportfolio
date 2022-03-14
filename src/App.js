@@ -4,7 +4,7 @@ import Home from './Pages/Home';
 import React,{ useEffect, useState } from "react";
 import Projects from './Pages/Projects';
 import Navbar from "./Navbarcomponents/Index";
-import {BrowserRouter as Router} from "react-router-dom"
+import {BrowserRouter as Router, Routes,Route} from "react-router-dom"
 import Contact from './Pages/Contact';
 import { FooterContainer }from './Container/Footer';
 import "./index.css";
@@ -16,7 +16,10 @@ import 'aos/dist/aos.css';
 function Resume (){
   return(
     <Router>
+      <Routes>
+        <Route path ="/resume" element = {<Resume/>}/>
 
+      </Routes>
     </Router>
   )
 } 
