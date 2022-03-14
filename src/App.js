@@ -6,6 +6,7 @@ import Projects from './Pages/Projects';
 import Navbar from "./Navbarcomponents/Index";
 import {BrowserRouter as Router, Routes,Route} from "react-router-dom"
 import Contact from './Pages/Contact';
+import Resume from './Pages/Resume';
 import { FooterContainer }from './Container/Footer';
 import "./index.css";
 import Skill from "./Pages/Skill"
