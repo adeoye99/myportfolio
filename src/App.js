@@ -47,7 +47,9 @@ function App() {
             <Projects/>
             <Contact/>
             <FooterContainer/>
-
+            <Routes>
+              <Route path ="/resume" element = {<Resume/>}/>
+            </Routes>
        </Router>
       </div>
   
