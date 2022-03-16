@@ -14,17 +14,6 @@ import Dropdown from "./Dropdowncomponent/Dropdown";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
-function Resume (){
-  return(
-    <Router>
-      <Routes>
-        <Route path ="/resume" element = {<Resume/>}/>
-
-      </Routes>
-    </Router>
-  )
-} 
-
 
 
 function App() {
