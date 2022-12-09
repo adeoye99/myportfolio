@@ -47,7 +47,7 @@ const AboutInfo = styled.div`
 const Aboutcontent = styled.div`
     text-align:left;
    font-size: 1rem;
-   
+   height:100%;
    padding-top:100px;
    padding-left:100px;
    padding-right:100px;

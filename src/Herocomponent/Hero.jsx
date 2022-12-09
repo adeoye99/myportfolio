@@ -71,7 +71,7 @@ const HeroTitle = styled.h1`
 }`
 const Buttoncontainer = styled(Link)`
 margin-top:250px;
-margin-right:1100px;
+
 @media only screen and (width:1024px){
    align-items:left;
    margin-left:300px;
@@ -98,6 +98,20 @@ border: none;
 }
 
 `
+const ResumeContainer = styled.a`
+margin-top:250px;
+
+@media only screen and (width:1024px){
+   align-items:left;
+   margin-left:300px;
+   margin-top:300px;
+}
+@media screen and (max-width:768px){
+    margin:0;
+}
+
+   
+`
 
 
 function Hero() {
@@ -123,7 +137,10 @@ function Hero() {
                 <Buttoncontainer to="contact" spy={true} smooth={true} offset={-10} duration={500}> 
                         <Button>CONTACT ME</Button>
                 </Buttoncontainer>
-              
+                <ResumeContainer href = "/Images/resume.pdf" download = "/Images/resume.pdf"> 
+                       <Button>Resume</Button>
+                </ResumeContainer>
+
                </Herowrapper>
          </HeroSection>
     )
