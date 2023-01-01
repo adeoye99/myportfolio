@@ -137,7 +137,7 @@ function Hero() {
                 <Buttoncontainer to="contact" spy={true} smooth={true} offset={-10} duration={500}> 
                         <Button>CONTACT ME</Button>
                 </Buttoncontainer>
-                <ResumeContainer href = "/Images/resume.pdf" download = "/Images/resume.pdf"> 
+                <ResumeContainer href = "/Images/resume2.pdf" download = "/Images/resume2.pdf"> 
                        <Button>Resume</Button>
                 </ResumeContainer>
 
