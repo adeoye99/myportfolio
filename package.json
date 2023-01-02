@@ -14,7 +14,7 @@
     "aos": "^2.3.4",
     "devicon": "^2.14.0",
     "dotenv": "^16.0.0",
-    "firebase": "^9.6.7",
+    "firebase": "^9.15.0",
     "os-browserify": "^0.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

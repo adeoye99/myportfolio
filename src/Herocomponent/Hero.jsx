@@ -103,11 +103,12 @@ margin-top:250px;
 
 @media only screen and (width:1024px){
    align-items:left;
-   margin-left:300px;
-   margin-top:300px;
+   
+   
 }
 @media screen and (max-width:768px){
-    margin:0;
+    margin-top: 0
+
 }
 
    
