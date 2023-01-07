@@ -110,7 +110,7 @@ function About() {
                      <Aboutimage src = "/Images/sulaimon.jpg"/>
 
                      </Imagecontainer>
-                        <Aboutcontent data-aos ="fade-left">Hello! My Name is Adeoye Sulaimon Kolawole I am a web developer based in Lagos,Nigeria.My main focus at the moment is frontend development hoping to become a full stack developer in a couple of years.I enjoy being creative and building attractive user interfaces. I have worked on projects like a streaming site,an  ecommerce web app, Spacestargram(using the NASA api)  </Aboutcontent>
+                        <Aboutcontent data-aos ="fade-left"> My Name is Adeoye Sulaimon Kolawole I am a web developer based in Lagos,Nigeria.My main focus at the moment is frontend development hoping to become a full stack developer in a couple of years.I enjoy being creative and building attractive user interfaces. I have worked on projects like a streaming site,an  ecommerce web app, Spacestargram(using the NASA api)  </Aboutcontent>
                   </AboutInfo>
              
     </Aboutcontainer>
